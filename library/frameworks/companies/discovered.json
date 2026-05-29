@@ -1,0 +1,15 @@
+{
+  "companies": [],
+  "_schema": {
+    "name": "Company name",
+    "ldc_id": "LDC-* ID from workforce.ai (null if unresolved)",
+    "discovered_date": "ISO 8601 date",
+    "source": "Which tool or signal surfaced this company",
+    "industry": "Tech/SaaS | Healthcare/MedTech | Other",
+    "location": "City, State or Remote",
+    "work_model": "Remote | Hybrid | On-site",
+    "discovery_note": "Why the agent flagged this company — what signal or pattern matched",
+    "status": "active | paused | dropped",
+    "dropped_reason": "If status is dropped, why (e.g., active UX posting, acquired, shut down)"
+  }
+}

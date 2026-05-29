@@ -1,0 +1,12 @@
+# Credentials — never commit
+.env
+
+# Local Claude Code settings
+.claude/
+
+# Runtime logs — generated on every agent run, not source-controlled
+logs/
+
+# macOS
+.DS_Store
+**/.DS_Store
