@@ -7,6 +7,9 @@
 # Runtime logs — generated on every agent run, not source-controlled
 logs/
 
+# Local sent-markers — track which digests have been emailed on this machine
+digests/*.sent
+
 # macOS
 .DS_Store
 **/.DS_Store
