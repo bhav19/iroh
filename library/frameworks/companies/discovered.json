@@ -1,5 +1,18 @@
 {
-  "companies": [],
+  "companies": [
+    {
+      "name": "Remitly",
+      "ldc_id": null,
+      "discovered_date": "2026-06-05",
+      "source": "Market scan — Seattle UX designer hiring search, June 5 2026",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA",
+      "work_model": "Hybrid",
+      "discovery_note": "Active Senior Product Designer posting for Conversational Platforms ($144K–$180K) surfaced in Seattle UX hiring search. Company is a mobile-first international fintech; AI/conversational product surface indicates new design investment. Role is in Seattle, hybrid.",
+      "status": "active",
+      "dropped_reason": null
+    }
+  ],
   "_schema": {
     "name": "Company name",
     "ldc_id": "LDC-* ID from workforce.ai (null if unresolved)",
