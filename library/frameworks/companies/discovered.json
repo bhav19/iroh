@@ -37,6 +37,31 @@
       "dropped_reason": null
     }
   ],
+    {
+      "name": "Seeq Corporation",
+      "ldc_id": null,
+      "discovered_date": "2026-06-08",
+      "source": "market_scan_web_search",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA (HQ)",
+      "work_model": "Remote",
+      "discovery_note": "Surfaced in June 8 Seattle UX market scan. Principal UX Designer posted May 13, 2026 (remote, US) and UX Designer, Workflow Systems also open simultaneously. Seeq builds industrial analytics and AI tools. Two simultaneous design openings at a ~200-person company is a meaningful signal. Found on Wellfound and Built In Seattle — direct Greenhouse URL not returned in this run.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "Union.ai",
+      "ldc_id": null,
+      "discovered_date": "2026-06-08",
+      "source": "market_scan_web_search",
+      "industry": "Tech/SaaS",
+      "location": "Bellevue, WA",
+      "work_model": "Hybrid",
+      "discovery_note": "Raised $19M Series A led by NEA with Mozilla Ventures participation (2026). Bellevue-based AI workflow platform. Early-stage startup; no active design posting confirmed. Added as early watch given Bellevue location and fresh funding. Verify via company careers page before actioning.",
+      "status": "active",
+      "dropped_reason": null
+    }
+  ],
   "_schema": {
     "name": "Company name",
     "ldc_id": "LDC-* ID from workforce.ai (null if unresolved)",
