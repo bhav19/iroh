@@ -1,5 +1,42 @@
 {
-  "companies": [],
+  "companies": [
+    {
+      "name": "Modern Health",
+      "ldc_id": null,
+      "discovered_date": "2026-06-05",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "San Francisco, CA",
+      "work_model": "Remote",
+      "discovery_note": "Active mid-level Product Designer role confirmed on Greenhouse (job-boards.greenhouse.io/modernhealth/jobs/8550516002). Mental health benefits platform, employer-sponsored model. Backed by Kleiner Perkins, Founders Fund, YC, Battery Ventures. $170M Series D (Oct 2021). Product design function confirmed active. Strong match: mental health, remote, mid-level IC role.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "Spring Health",
+      "ldc_id": null,
+      "discovered_date": "2026-06-06",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "New York, NY",
+      "work_model": "Remote",
+      "discovery_note": "Surfaced in market scan as one of the fastest-growing mental health benefits platforms. ~20 open roles per Glassdoor as of June 2026. UX Research & Design Operations Manager role found (NYC hybrid). No standalone remote Product Designer or UX Designer role confirmed in today's run. Design function is real and adding operational infrastructure. Tiger Global-backed, $3B+ valuation. Watch springhealth.com/open-roles for IC designer postings.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "DocuSign",
+      "ldc_id": null,
+      "discovered_date": "2026-06-05",
+      "source": "market_scan_web_search",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA",
+      "work_model": "Hybrid",
+      "discovery_note": "Surfaced in market scan June 5 run. Lead UI/UX Designer (8+ years, hybrid Seattle) and Product Designer (5+ years, hybrid Seattle) both confirmed active on careers.docusign.com in March-April 2026 window. Publicly traded, established company. Two simultaneous Seattle-based design openings. Not re-verified in June 6 run — confirm on careers.docusign.com before acting.",
+      "status": "active",
+      "dropped_reason": null
+    }
+  ],
   "_schema": {
     "name": "Company name",
     "ldc_id": "LDC-* ID from workforce.ai (null if unresolved)",
