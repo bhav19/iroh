@@ -71,6 +71,18 @@
       "discovery_note": "Surfaced in June 9 Seattle startup market scan. YC-backed and F-Prime Capital-backed property management SaaS — end-to-end maintenance coordination and resident amenity platform. 67 employees, 80,000+ homes served. 100% remote team. Product Designer role confirmed active (found on startup.jobs and Wellfound). Small team means high UX ownership. Check latchel.com/careers and wellfound.com/company/latchel for current posting details.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Amperity",
+      "ldc_id": null,
+      "discovered_date": "2026-06-10",
+      "source": "regional_intelligence — Seattle/Bellevue/Redmond Tech/SaaS scan",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA",
+      "work_model": "Hybrid",
+      "discovery_note": "Surfaced by regional_intelligence scan (52 employees in Seattle region). Customer data platform (CDP) company. Not yet evaluated for UX hiring signals — adding for future monitoring.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
