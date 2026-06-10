@@ -20,7 +20,7 @@
       "industry": "Healthcare/MedTech",
       "location": "New York, NY",
       "work_model": "Remote",
-      "discovery_note": "IC design roles confirmed active as of June 7, 2026: Senior Product Designer Member Growth (greenhouse.io/springhealth66/jobs/4650623005, salary $172K-$215.5K, one aggregator listed as Seattle hybrid — unverified) and Staff Product Designer Member Experience (greenhouse.io/springhealth66/jobs/4541660005, remote). ~13 designers on staff per workforce.ai. Workforce data shows team at 13 distinct designers. IPO candidacy discussed in Dec 2025 industry press (Behavioral Health Business). Upgraded from Watch to active hiring confirmed. Verify Seattle hybrid claim directly on Greenhouse before applying.",
+      "discovery_note": "IC design roles confirmed active as of June 7, 2026: Senior Product Designer Member Growth (greenhouse.io/springhealth66/jobs/4650623005, salary $172K-$215.5K, one aggregator listed as Seattle hybrid — unverified) and Staff Product Designer Member Experience (greenhouse.io/springhealth66/jobs/4541660005, remote). ~13 designers on staff per workforce.ai. IPO candidacy discussed in Dec 2025 industry press (Behavioral Health Business). Re-confirmed active June 9, 2026 run.",
       "status": "active",
       "dropped_reason": null
     },
@@ -32,11 +32,10 @@
       "industry": "Tech/SaaS",
       "location": "Seattle, WA",
       "work_model": "Hybrid",
-      "discovery_note": "Surfaced in market scan June 5 run. Lead UI/UX Designer (8+ years, hybrid Seattle) and Product Designer (5+ years, hybrid Seattle) both confirmed active on careers.docusign.com in March-April 2026 window. Publicly traded, established company. Two simultaneous Seattle-based design openings. Not re-verified in June 6 run — confirm on careers.docusign.com before acting.",
+      "discovery_note": "Surfaced in market scan June 5 run. Lead UI/UX Designer (8+ years, hybrid Seattle) and Product Designer (5+ years, hybrid Seattle) both confirmed active on careers.docusign.com in March-April 2026 window. Publicly traded, established company. Two simultaneous Seattle-based design openings. Not re-verified in June 9 run — confirm on careers.docusign.com before acting.",
       "status": "active",
       "dropped_reason": null
-    }
-  ],
+    },
     {
       "name": "Seeq Corporation",
       "ldc_id": null,
@@ -45,7 +44,7 @@
       "industry": "Tech/SaaS",
       "location": "Seattle, WA (HQ)",
       "work_model": "Remote",
-      "discovery_note": "Surfaced in June 8 Seattle UX market scan. Principal UX Designer posted May 13, 2026 (remote, US) and UX Designer, Workflow Systems also open simultaneously. Seeq builds industrial analytics and AI tools. Two simultaneous design openings at a ~200-person company is a meaningful signal. Found on Wellfound and Built In Seattle — direct Greenhouse URL not returned in this run.",
+      "discovery_note": "Surfaced in June 8 Seattle UX market scan. Principal UX Designer posted May 13, 2026 (remote, US) and UX Designer, Workflow Systems also open simultaneously. Seeq builds industrial analytics and AI tools. Two simultaneous design openings at a ~200-person company is a meaningful signal. Found on Wellfound and Built In Seattle — direct Greenhouse URL not returned in this run. Re-confirmed surfacing in June 9 Seattle scan.",
       "status": "active",
       "dropped_reason": null
     },
@@ -57,7 +56,19 @@
       "industry": "Tech/SaaS",
       "location": "Bellevue, WA",
       "work_model": "Hybrid",
-      "discovery_note": "Raised $19M Series A led by NEA with Mozilla Ventures participation (2026). Bellevue-based AI workflow platform. Early-stage startup; no active design posting confirmed. Added as early watch given Bellevue location and fresh funding. Verify via company careers page before actioning.",
+      "discovery_note": "Raised $19M Series A led by NEA with Mozilla Ventures participation (2026). Bellevue-based AI workflow platform. $19M raise confirmed by GeekWire (geekwire.com/2026/seattle-area-startup-union-ai-raises-19m-to-fuel-ai-workflow-platform/). Early-stage startup; no active design posting confirmed. Added as early watch given Bellevue location and fresh funding. Verify via company careers page before actioning.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "Latchel",
+      "ldc_id": null,
+      "discovered_date": "2026-06-09",
+      "source": "market_scan_web_search",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA (HQ)",
+      "work_model": "Remote",
+      "discovery_note": "Surfaced in June 9 Seattle startup market scan. YC-backed and F-Prime Capital-backed property management SaaS — end-to-end maintenance coordination and resident amenity platform. 67 employees, 80,000+ homes served. 100% remote team. Product Designer role confirmed active (found on startup.jobs and Wellfound). Small team means high UX ownership. Check latchel.com/careers and wellfound.com/company/latchel for current posting details.",
       "status": "active",
       "dropped_reason": null
     }
