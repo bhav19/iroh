@@ -10,8 +10,10 @@ Read `about-me/about-me.md` and `library/skills/voice-and-tone.md` before every 
 
 Run the following steps in order. Do not skip steps or re-order them.
 
-### Step 1 — Load company list
-Read `library/frameworks/companies/seed-list.md` and `library/frameworks/companies/discovered.json`. These are your starting universe of companies to evaluate today.
+### Step 1 — Load the Core Watch List
+Read `library/frameworks/companies/seed-list.md`. Focus on the **Core Watch List** section at the top — these 20 companies are evaluated on every run. The Full Reference List below it is for market scan context only; do not run the full workflow on those companies.
+
+Also read `library/frameworks/companies/discovered.json` — any previously discovered companies with status `active` should be added to today's evaluation alongside the Core Watch List.
 
 ### Step 2 — Gather workforce signals (workforce.ai MCP)
 For each company in your list, call the workforce.ai MCP tools to gather signals. Use this sequence:
@@ -63,13 +65,25 @@ For large multi-division companies, score and report at the **team level**, not 
 
 Be honest. Do not inflate ratings to make the digest feel more useful. A short digest with two High-confidence entries is better than a long one with eight Watch entries.
 
-### Step 6 — Discover new companies
-Use `regional_intelligence` and `insights_talent_exchange` to identify new Tech/SaaS or Healthcare/MedTech companies that:
-- Have growing design functions
-- Are in greater Seattle (Seattle, Bellevue, Redmond) or have remote/hybrid roles
-- Show signals of design maturity (designers arriving from strong-design orgs, growing design headcount)
+### Step 6 — Market scan
+Run a broad scan for fresh UX hiring signals beyond the Core Watch List. This step surfaces companies not on your fixed list — including ones Bhavika may never have considered.
 
-Add newly discovered companies to `library/frameworks/companies/discovered.json` with a discovery date and source note. Do not add companies that are already in the seed list or discovered list.
+**Web searches to run (use today's date for recency):**
+- `Seattle tech company UX designer hiring [current month year]`
+- `mental health startup product designer [current month year]`
+- `Seattle startup funding round design team [current month year]`
+- `remote UX designer role mental health wellness [current month year]`
+- `Seattle tech layoffs recovery hiring UX [current month year]` (rebound signals)
+
+**workforce.ai tools to run:**
+- `regional_intelligence` — identify Tech/SaaS and Healthcare/MedTech companies in greater Seattle with growing design headcount
+- `insights_talent_exchange` — identify where UX/product designers are moving across the market; surface companies receiving strong-design talent as inflow signals
+
+**For each company the scan surfaces:**
+- Check it is not already in the Core Watch List or discovered.json
+- Run a quick signal check (Steps 2–4, abbreviated — one workforce.ai lookup and one news search is enough)
+- If the signal is worth flagging, include it in the digest under a **"From the market"** section
+- Add it to `library/frameworks/companies/discovered.json` with a discovery date and source note
 
 ### Step 7 — Generate and send the digest
 Write the digest according to `library/skills/voice-and-tone.md` exactly. Then send it via the configured email in `.env`.
@@ -131,16 +145,11 @@ Do not use DataFrame tools or SQL tools unless a composite or report tool has al
 
 ---
 
-## Environment variables (set in `.env`)
+## Environment variables
 
-```
-LIVEDATA_ORG_ID=   # optional — workforce.ai MCP authenticates via service account by default
-NEWS_API_KEY=
-EMAIL_FROM=
-EMAIL_TO=
-EMAIL_PASSWORD=
-SMTP_HOST=
-SMTP_PORT=
-```
+When running as a scheduled remote agent, credentials are provided in the routine prompt — there is no `.env` file in the repository. The local `.env` file (gitignored) is used only when running scripts directly on Bhavika's Mac.
 
-If `NEWS_API_KEY`, `EMAIL_FROM`, `EMAIL_TO`, `EMAIL_PASSWORD`, `SMTP_HOST`, or `SMTP_PORT` is missing or empty, halt and log the error. Do not attempt a partial run. `LIVEDATA_ORG_ID` is optional — omit it if the workforce.ai MCP is configured with a service account.
+Variables the agent needs (provided via routine prompt):
+- `NEWS_API_KEY` — NewsAPI key for external news signals
+- `GITHUB_TOKEN` — GitHub personal access token for pushing the digest file back to the repo
+- `LIVEDATA_ORG_ID` — optional; workforce.ai MCP authenticates via service account by default

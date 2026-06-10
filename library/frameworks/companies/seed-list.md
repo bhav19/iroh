@@ -1,11 +1,39 @@
 # Seed Company List
 
-Hand-picked target companies for the UX hiring signal agent to monitor. The agent evaluates this list on every run.
+---
 
-**How to fill this in:**
-- `Company` — use the name exactly as it appears on LinkedIn
-- `Location / Work model` — be specific (e.g., "Seattle, WA — hybrid")
-- `Why it's here` — one sentence; the agent uses this as context when interpreting signals
+## Core Watch List — evaluated on every run
+
+These 20 companies are the agent's daily focus. The full workflow (workforce signals, news, job board check, scoring) runs for each of these on every run, regardless of what the market scan turns up.
+
+| Company | Category | Notes for signal interpretation |
+|---|---|---|
+| Anthropic | AI | Tiny design team relative to scale; Claude Design launched April 2026; treat at team level |
+| Apple | Large Tech — Seattle | Engineering and design presence in Seattle/Redmond; evaluate at team level |
+| Airbnb | Design-forward Consumer | Pioneer design culture; strong research and craft focus |
+| Microsoft | Large Tech — Seattle | Redmond HQ; evaluate specific divisions (Azure, M365, Copilot, Surface, Xbox) |
+| Headspace | Mental Health | Consumer mental health and meditation app; UX is the product |
+| Lyra Health | Mental Health | Mental health benefits platform; remote; active design investment |
+| Notion | Productivity SaaS | Exceptionally design-forward; remote-friendly |
+| Amazon | Large Tech — Seattle | Seattle HQ; evaluate specific teams (Alexa, Devices, AWS Console, etc.) |
+| Adobe | Large Tech — Seattle | Design tools company; Seattle office; evaluate at team level |
+| Expedia Group | Large Tech — Seattle | Seattle HQ; consumer travel UX at scale; evaluate at team level |
+| Salesforce | Large Tech — Seattle | Seattle office; owns Tableau (also Seattle-based); evaluate at team level |
+| Nvidia | AI / Large Tech | Expanding software and AI platform surface; Santa Clara + Seattle offices |
+| Calm | Mental Health / Wellness | Meditation and sleep consumer app; remote-friendly |
+| Atlassian | Enterprise SaaS | Remote-friendly; Jira, Confluence, Trello; large design org |
+| Netflix | Entertainment | Consumer streaming; UX research and design operate at significant craft |
+| Figma | Design Tools | The design tool; AI-first product expansion underway; public company |
+| Spotify | Design-forward Consumer | Music and podcast streaming; strong design culture; New York + remote |
+| LinkedIn | Social / Large Tech | Large Bellevue engineering and product office; evaluate at team level |
+| Nintendo of America | Gaming — Seattle | Redmond, WA HQ; consumer product design and digital teams |
+| The Pokémon Company International | Gaming — Seattle | Bellevue, WA HQ; consumer-facing UX across games, apps, and licensing |
+
+---
+
+## Full Reference List
+
+The companies below are not evaluated on every run but inform the agent's market scan (Step 6). The agent may surface any of these if they appear in market signals.
 
 ---
 
