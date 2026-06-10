@@ -14,13 +14,13 @@
     },
     {
       "name": "Spring Health",
-      "ldc_id": null,
+      "ldc_id": "LDC-1-3a1b5c43-b045-42f5-b730-4aa4d031fc99-group",
       "discovered_date": "2026-06-06",
       "source": "market_scan_web_search",
       "industry": "Healthcare/MedTech",
       "location": "New York, NY",
       "work_model": "Remote",
-      "discovery_note": "Surfaced in market scan as one of the fastest-growing mental health benefits platforms. ~20 open roles per Glassdoor as of June 2026. UX Research & Design Operations Manager role found (NYC hybrid). No standalone remote Product Designer or UX Designer role confirmed in today's run. Design function is real and adding operational infrastructure. Tiger Global-backed, $3B+ valuation. Watch springhealth.com/open-roles for IC designer postings.",
+      "discovery_note": "IC design roles confirmed active as of June 7, 2026: Senior Product Designer Member Growth (greenhouse.io/springhealth66/jobs/4650623005, salary $172K-$215.5K, one aggregator listed as Seattle hybrid — unverified) and Staff Product Designer Member Experience (greenhouse.io/springhealth66/jobs/4541660005, remote). ~13 designers on staff per workforce.ai. Workforce data shows team at 13 distinct designers. IPO candidacy discussed in Dec 2025 industry press (Behavioral Health Business). Upgraded from Watch to active hiring confirmed. Verify Seattle hybrid claim directly on Greenhouse before applying.",
       "status": "active",
       "dropped_reason": null
     },
