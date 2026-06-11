@@ -83,6 +83,30 @@
       "discovery_note": "Surfaced by regional_intelligence scan (52 employees in Seattle region). Customer data platform (CDP) company. Not yet evaluated for UX hiring signals — adding for future monitoring.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Omada Health",
+      "ldc_id": null,
+      "discovered_date": "2026-06-11",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "Remote (US)",
+      "work_model": "Remote",
+      "discovery_note": "Surfaced in June 11 mental health and wellness market scan. Digital health platform focused on behavior change — diabetes prevention, hypertension, mental health. Senior Product Designer and Staff Product Designer both confirmed active via Greenhouse (greenhouse.io/omadahealth) and Glassdoor in this run. Strong mental health + remote fit for Bhavika's profile. No workforce.ai analysis run yet — adding for future monitoring.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "BetterUp",
+      "ldc_id": null,
+      "discovered_date": "2026-06-11",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "Remote (US)",
+      "work_model": "Remote",
+      "discovery_note": "Surfaced in June 11 mental health and wellness market scan. Employer-sponsored professional coaching and wellbeing platform. Staff Product Designer and Product Design Manager both confirmed active via NoDesk and company careers page in this run. Similar employer-sponsored mental health model to Lyra Health. No workforce.ai analysis run yet — adding for future monitoring.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
