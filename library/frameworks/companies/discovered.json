@@ -85,6 +85,18 @@
       "dropped_reason": null
     },
     {
+      "name": "Smartsheet",
+      "ldc_id": null,
+      "discovered_date": "2026-06-13",
+      "source": "regional_intelligence — Seattle/Bellevue/Redmond Tech/SaaS scan",
+      "industry": "Tech/SaaS",
+      "location": "Bellevue, WA",
+      "work_model": "Hybrid (Remote Eligible)",
+      "discovery_note": "Surfaced by regional_intelligence scan (218 employees in Seattle region — largest non-healthcare employer in the Tech/SaaS filter). Work management SaaS, public company. Multiple simultaneous active UX postings confirmed June 13, 2026: Senior UX Designer (smartsheet.com/careers/position/2368932/senior-ux-designer), Sr. Product Designer I — Solution & Portfolio Experiences (builtinseattle.com, remote eligible), and a mid-level UX Designer role (remote or Bellevue). Design org described as large and growing. Strong Seattle match for Bhavika's profile.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
       "name": "Omada Health",
       "ldc_id": null,
       "discovered_date": "2026-06-11",
