@@ -119,6 +119,18 @@
       "discovery_note": "Surfaced in June 11 mental health and wellness market scan. Employer-sponsored professional coaching and wellbeing platform. Staff Product Designer and Product Design Manager both confirmed active via NoDesk and company careers page in this run. Similar employer-sponsored mental health model to Lyra Health. No workforce.ai analysis run yet — adding for future monitoring.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "CoreWeave",
+      "ldc_id": "LDC-1-cb6ba28b-3dfb-451b-b1d5-19d6f11a1df3-group",
+      "discovered_date": "2026-06-16",
+      "source": "regional_intelligence — Seattle/Bellevue/Redmond Tech/SaaS scan",
+      "industry": "Tech/SaaS",
+      "location": "Roseland, NJ (HQ); Seattle area presence",
+      "work_model": "Hybrid / Remote-eligible",
+      "discovery_note": "Surfaced in June 16 Seattle regional intelligence scan and web search. Post-IPO AI cloud computing company (Nasdaq: CRWV, IPO March 2025). Workforce.ai shows only 3 UX/product designers on staff — grew from 2 in Dec 2025. Company describes itself as in 'hyper-growth.' Active Senior UI/UX Designer posting confirmed June 10, 2026 on startup.jobs (startup.jobs/ui-ux-designer-coreweave-2-4656431). Very small design team for a post-IPO infrastructure company at scale. ZipRecruiter shows 10+ CoreWeave roles in Seattle area. Enterprise/B2B UX context — cloud infrastructure customers, not consumer.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
