@@ -121,6 +121,18 @@
       "dropped_reason": null
     },
     {
+      "name": "Big Health",
+      "ldc_id": null,
+      "discovered_date": "2026-06-20",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "Remote (US)",
+      "work_model": "Remote",
+      "discovery_note": "Surfaced in June 20 mental health market scan. Makes Sleepio (digital CBT for insomnia) and Daylight (digital CBT for anxiety) — FDA-cleared digital therapeutics. Remote-first company. Senior Product Designer role confirmed active on Lever (jobs.lever.co/bighealth/def06d9e-4d1d-4816-a545-4ad858e3c99b). Interface IS the therapy — strong UX-centric product. Strong match: mental health, remote, senior IC role.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
       "name": "CoreWeave",
       "ldc_id": "LDC-1-cb6ba28b-3dfb-451b-b1d5-19d6f11a1df3-group",
       "discovered_date": "2026-06-16",
