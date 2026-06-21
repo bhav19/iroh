@@ -143,6 +143,18 @@
       "discovery_note": "Surfaced in June 16 Seattle regional intelligence scan and web search. Post-IPO AI cloud computing company (Nasdaq: CRWV, IPO March 2025). Workforce.ai shows only 3 UX/product designers on staff — grew from 2 in Dec 2025. Company describes itself as in 'hyper-growth.' Active Senior UI/UX Designer posting confirmed June 10, 2026 on startup.jobs (startup.jobs/ui-ux-designer-coreweave-2-4656431). Very small design team for a post-IPO infrastructure company at scale. ZipRecruiter shows 10+ CoreWeave roles in Seattle area. Enterprise/B2B UX context — cloud infrastructure customers, not consumer.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Auger",
+      "ldc_id": null,
+      "discovered_date": "2026-06-21",
+      "source": "regional_intelligence — Seattle/Bellevue/Redmond Tech/SaaS scan",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA",
+      "work_model": "Unknown",
+      "discovery_note": "Surfaced in June 21 regional_intelligence scan (58 employees in Seattle region, ranked #7 of 100 companies). No design posting confirmed and no news found in this run. Adding as early watch — requires a follow-up lookup to determine product focus and UX needs.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
