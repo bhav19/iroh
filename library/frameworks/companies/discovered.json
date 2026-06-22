@@ -155,6 +155,30 @@
       "discovery_note": "Surfaced in June 21 regional_intelligence scan (58 employees in Seattle region, ranked #7 of 100 companies). No design posting confirmed and no news found in this run. Adding as early watch — requires a follow-up lookup to determine product focus and UX needs.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Headway",
+      "ldc_id": null,
+      "discovered_date": "2026-06-22",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "New York, NY / San Francisco, CA / Seattle, WA",
+      "work_model": "Hybrid (NYC / SF / Seattle offices)",
+      "discovery_note": "Surfaced in June 22 mental health startup market scan. Mental health platform connecting patients with in-network therapists. Series D, $325M raised total from a16z, Accel, GV, Spark Capital, Thrive Capital. Two simultaneous Staff Product Designer roles confirmed active on Greenhouse: job-boards.greenhouse.io/headway/jobs/5679215004 and /5734189004. $170K base salary listed. Seattle listed as office location option — strong match for Bhavika's profile. Most significant new discovery of the June 22 run.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "Truveta",
+      "ldc_id": null,
+      "discovered_date": "2026-06-22",
+      "source": "regional_intelligence — Seattle/Bellevue/Redmond Tech/SaaS + Healthcare/MedTech scan",
+      "industry": "Healthcare/MedTech",
+      "location": "Seattle, WA",
+      "work_model": "Unknown",
+      "discovery_note": "Surfaced in June 22 regional_intelligence scan (57 employees in Seattle region, ranked in top 10 of combined Tech/SaaS + Healthcare filter). Health data analytics platform — aggregates de-identified patient data for clinical research. No UX/product designer posting confirmed in this run. Adding as early watch — requires a follow-up check on product surface area and design team size.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
