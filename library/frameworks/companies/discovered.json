@@ -179,6 +179,30 @@
       "discovery_note": "Surfaced in June 22 regional_intelligence scan (57 employees in Seattle region, ranked in top 10 of combined Tech/SaaS + Healthcare filter). Health data analytics platform — aggregates de-identified patient data for clinical research. No UX/product designer posting confirmed in this run. Adding as early watch — requires a follow-up check on product surface area and design team size.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Kintsugi",
+      "ldc_id": null,
+      "discovered_date": "2026-06-25",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "Remote (US)",
+      "work_model": "Remote",
+      "discovery_note": "Surfaced in June 25 mental health startup market scan. Uses voice analysis AI to detect depression and anxiety signals — clinical-grade mental health tech. No specific UX posting confirmed in this run. Adding as early watch given strong thematic match with Bhavika's mental health interest area. Check company careers page before actioning.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "Meru Health",
+      "ldc_id": null,
+      "discovered_date": "2026-06-25",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "Remote (US)",
+      "work_model": "Remote",
+      "discovery_note": "Surfaced in June 25 mental health startup market scan. Digital mental health platform focused on therapist-guided programs and biofeedback tools. No specific UX posting confirmed in this run. Adding as early watch — strong thematic match with mental health interest area. Requires a follow-up check for design team size and open roles.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
