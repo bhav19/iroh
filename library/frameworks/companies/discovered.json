@@ -203,6 +203,42 @@
       "discovery_note": "Surfaced in June 25 mental health startup market scan. Digital mental health platform focused on therapist-guided programs and biofeedback tools. No specific UX posting confirmed in this run. Adding as early watch — strong thematic match with mental health interest area. Requires a follow-up check for design team size and open roles.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Grow Therapy",
+      "ldc_id": null,
+      "discovered_date": "2026-06-26",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "Seattle, WA / Remote (US)",
+      "work_model": "Hybrid (Seattle office)",
+      "discovery_note": "Surfaced in June 26 mental health startup market scan. Therapist marketplace + practice management platform — connects patients with in-network therapists. Series D funded ($340M total raised from a16z, Sequoia, TCV). Active Senior Product Designer and Staff Product Designer roles confirmed on Greenhouse in this run. Seattle listed as hybrid office location — strong match for Bhavika's profile. High UX ownership potential given therapist and patient-facing surfaces.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "Rula Health",
+      "ldc_id": null,
+      "discovered_date": "2026-06-26",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "Remote (US)",
+      "work_model": "Remote",
+      "discovery_note": "Surfaced in June 26 mental health startup market scan. Mental health platform focused on therapist matching and provider network management. Active Senior Product Designer role confirmed on Greenhouse in this run. Remote-first. Strong thematic match with Bhavika's mental health interest area. Requires workforce.ai lookup for design team size on next run.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "Two Chairs",
+      "ldc_id": null,
+      "discovered_date": "2026-06-26",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "Remote (US)",
+      "work_model": "Hybrid",
+      "discovery_note": "Surfaced in June 26 mental health startup market scan. Hybrid therapy model — combines in-person and virtual therapy, with proprietary matching algorithm. Active Staff Product Designer role confirmed on Greenhouse in this run. Strong thematic match. Requires workforce.ai lookup for design team size and funding details on next run.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
