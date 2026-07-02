@@ -239,6 +239,18 @@
       "discovery_note": "Surfaced in June 26 mental health startup market scan. Hybrid therapy model — combines in-person and virtual therapy, with proprietary matching algorithm. Active Staff Product Designer role confirmed on Greenhouse in this run. Strong thematic match. Requires workforce.ai lookup for design team size and funding details on next run.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Trase AI",
+      "ldc_id": null,
+      "discovered_date": "2026-07-02",
+      "source": "market_scan_web_search",
+      "industry": "Healthcare/MedTech",
+      "location": "McLean, VA (HQ); Seattle area (expanding)",
+      "work_model": "Unknown",
+      "discovery_note": "Surfaced in July 2 Seattle startup funding market scan. Raised $107M seed round led by ARCH Venture Partners on June 25, 2026. Agentic AI platform for regulated industries: healthcare, national security, energy. Plans to grow from ~20 to ~100 Seattle-area employees. Hired Baskar Sridharan (AWS/Google/Microsoft) as President. No UX or product designer posting confirmed — flagged as pre-hire signal. Sources: GeekWire (geekwire.com/2026/after-hiring-aws-exec-and-raising-107m-seed-round-virginia-startup-plants-flag-in-seattle-area/), MobiHealthNews.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
