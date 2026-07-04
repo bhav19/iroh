@@ -104,7 +104,7 @@
       "industry": "Healthcare/MedTech",
       "location": "Remote (US)",
       "work_model": "Remote",
-      "discovery_note": "Surfaced in June 11 mental health and wellness market scan. Digital health platform focused on behavior change — diabetes prevention, hypertension, mental health. Senior Product Designer and Staff Product Designer both confirmed active via Greenhouse (greenhouse.io/omadahealth) and Glassdoor in this run. Strong mental health + remote fit for Bhavika's profile. No workforce.ai analysis run yet — adding for future monitoring.",
+      "discovery_note": "Surfaced in June 11 mental health and wellness market scan. Digital health platform focused on behavior change — diabetes prevention, hypertension, mental health. Senior Product Designer and Staff Product Designer both confirmed active via Greenhouse (greenhouse.io/omadahealth) and Glassdoor in this run. July 4, 2026 re-check: Product Designer (Mental Health) role still active on startup.jobs (startup.jobs/product-designer-mental-health-at-omadahealth). Strong mental health + remote fit for Bhavika's profile. workforce.ai analysis not yet run.",
       "status": "active",
       "dropped_reason": null
     },
@@ -249,6 +249,19 @@
       "location": "McLean, VA (HQ); Seattle area (expanding)",
       "work_model": "Unknown",
       "discovery_note": "Surfaced in July 2 Seattle startup funding market scan. Raised $107M seed round led by ARCH Venture Partners on June 25, 2026. Agentic AI platform for regulated industries: healthcare, national security, energy. Plans to grow from ~20 to ~100 Seattle-area employees. Hired Baskar Sridharan (AWS/Google/Microsoft) as President. No UX or product designer posting confirmed — flagged as pre-hire signal. Sources: GeekWire (geekwire.com/2026/after-hiring-aws-exec-and-raising-107m-seed-round-virginia-startup-plants-flag-in-seattle-area/), MobiHealthNews.",
+      "status": "active",
+      "dropped_reason": null
+    }
+  ],
+    {
+      "name": "Carbon Robotics",
+      "ldc_id": null,
+      "discovered_date": "2026-07-04",
+      "source": "market_scan_web_search",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA",
+      "work_model": "On-site (4 days/week)",
+      "discovery_note": "Surfaced in July 4 Seattle UX market scan. AgriTech robotics company building AI-powered laser weeding robots. $157M total funding including NVIDIA's venture arm (NVentures). Sr. UX/UI Designer role confirmed active on LinkedIn (linkedin.com/jobs/view/ux-ui-designer-at-carbon-robotics-4308505004) and mediabistro.com. Role requires 4 days/week in-person at Seattle HQ. Outside Bhavika's primary target industries (tech/SaaS and healthcare/mental health) but Seattle-based with genuine UX complexity — hardware + software + agricultural field research. Verify at carbonrobotics.com/job-openings.",
       "status": "active",
       "dropped_reason": null
     }
