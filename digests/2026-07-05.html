@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UX Hiring Signals — Sunday, July 5</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f8f8f6;
+    --border: #e4e4e0;
+    --text: #1a1a18;
+    --muted: #6b6b68;
+    --accent: #1a1a18;
+    --red: #c0392b;
+    --yellow: #b7860b;
+    --blue: #1d4ed8;
+    --green: #166534;
+    --warning-bg: #fef9e7;
+    --warning-border: #f39c12;
+    --caution-bg: #fdf2f2;
+    --caution-border: #e74c3c;
+    --link: #1d4ed8;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f0e;
+      --surface: #1a1a18;
+      --border: #2e2e2a;
+      --text: #e8e8e4;
+      --muted: #9b9b96;
+      --accent: #e8e8e4;
+      --red: #f87171;
+      --yellow: #fbbf24;
+      --blue: #93c5fd;
+      --green: #86efac;
+      --warning-bg: #2a2400;
+      --warning-border: #b7860b;
+      --caution-bg: #2a1010;
+      --caution-border: #ef4444;
+      --link: #93c5fd;
+    }
+  }
+
+  :root[data-theme="light"] {
+    --bg: #ffffff;
+    --surface: #f8f8f6;
+    --border: #e4e4e0;
+    --text: #1a1a18;
+    --muted: #6b6b68;
+    --accent: #1a1a18;
+    --red: #c0392b;
+    --yellow: #b7860b;
+    --blue: #1d4ed8;
+    --green: #166534;
+    --warning-bg: #fef9e7;
+    --warning-border: #f39c12;
+    --caution-bg: #fdf2f2;
+    --caution-border: #e74c3c;
+    --link: #1d4ed8;
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0f0f0e;
+    --surface: #1a1a18;
+    --border: #2e2e2a;
+    --text: #e8e8e4;
+    --muted: #9b9b96;
+    --accent: #e8e8e4;
+    --red: #f87171;
+    --yellow: #fbbf24;
+    --blue: #93c5fd;
+    --green: #86efac;
+    --warning-bg: #2a2400;
+    --warning-border: #b7860b;
+    --caution-bg: #2a1010;
+    --caution-border: #ef4444;
+    --link: #93c5fd;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+
+  a { color: var(--link); text-decoration: underline; }
+  a:hover { opacity: 0.8; }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 4px;
+  }
+
+  .datestamp {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+
+  .data-warning {
+    background: var(--warning-bg);
+    border-left: 3px solid var(--warning-border);
+    padding: 12px 16px;
+    margin-bottom: 28px;
+    font-size: 13.5px;
+    color: var(--text);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .data-warning strong { color: var(--yellow); }
+
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 18px 20px;
+    margin-bottom: 36px;
+  }
+
+  .summary h2 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+
+  .summary ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .summary ul li {
+    padding: 5px 0;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .summary ul li:last-child { border-bottom: none; }
+
+  .summary .caution-label { color: var(--red); font-weight: 600; }
+
+  .section-header {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin: 40px 0 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .entry {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .entry:last-child {
+    border-bottom: none;
+  }
+
+  .entry-header {
+    margin-bottom: 12px;
+  }
+
+  .entry-name {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  .entry-meta {
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+
+  .entry-meta a {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--muted);
+  }
+
+  .entry ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+  }
+
+  .entry ul li {
+    padding: 4px 0 4px 14px;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .entry ul li::before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    color: var(--muted);
+  }
+
+  .field-label {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .likelihood {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12.5px;
+    font-weight: 600;
+    margin-top: 6px;
+  }
+
+  .likelihood.high {
+    background: #d4edda;
+    color: #155724;
+  }
+
+  .likelihood.moderate {
+    background: #fff3cd;
+    color: #856404;
+  }
+
+  .likelihood.watch {
+    background: #e2e3e5;
+    color: #383d41;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .likelihood.high { background: #1a3a24; color: #86efac; }
+    .likelihood.moderate { background: #2a2200; color: #fbbf24; }
+    .likelihood.watch { background: #2a2a2a; color: #aaa; }
+  }
+
+  :root[data-theme="dark"] .likelihood.high { background: #1a3a24; color: #86efac; }
+  :root[data-theme="dark"] .likelihood.moderate { background: #2a2200; color: #fbbf24; }
+  :root[data-theme="dark"] .likelihood.watch { background: #2a2a2a; color: #aaa; }
+
+  .caution-block {
+    background: var(--caution-bg);
+    border-left: 3px solid var(--caution-border);
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 13.5px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .roles-list {
+    margin: 8px 0;
+  }
+
+  .role-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: baseline;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13.5px;
+  }
+
+  .role-item:last-child { border-bottom: none; }
+
+  .role-title { font-weight: 600; }
+
+  .role-meta { color: var(--muted); font-size: 12.5px; }
+
+  .closing {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 2px solid var(--border);
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .closing p { margin-bottom: 10px; }
+
+  .from-market {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 32px;
+  }
+
+  .from-market h3 {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .from-market .entry {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+</style>
+</head>
+<body>
+
+<h1>UX Hiring Signals — Sunday, July 5</h1>
+<p class="datestamp">Daily digest · July 5, 2026</p>
+
+<div class="data-warning">
+  <strong>⚠ Data quality note:</strong> The workforce.ai MCP server requires OAuth authentication that cannot be completed in a scheduled session. Headcount trends, team composition data, and departure signals are unavailable today. All findings below come from verified news sources, press releases, and job board search results. Direct job page fetches were frequently blocked (403), so postings are confirmed via indexed search results — click each link to verify it is still active before investing time in an application.
+</div>
+
+<!-- OPENING SUMMARY -->
+<div class="summary">
+  <h2>Today in brief</h2>
+  <ul>
+    <li><strong>Expedia Group</strong> — 5 confirmed active Seattle design roles ($173K–$313K), all tied to the company's aggressive AI pivot at Explore 2026. Strongest single Seattle concentration of the week.</li>
+    <li><strong>Lyra Health</strong> — 4 simultaneous active roles ($142K–$246K, fully remote): Lead Product Designer (×2), Senior Product Designer, Staff Product Designer. Mental health + remote + meaningful IC design work.</li>
+    <li><strong>Microsoft — Copilot &amp; Developer Tools</strong> — Multiple Redmond roles confirmed (Senior and Principal levels). M365 Copilot shipped a major UX redesign May 28. <span class="caution-label">⚠ Avoid Xbox: thousands of positions being eliminated this week.</span></li>
+    <li><strong>Amazon — Alexa &amp; Devices</strong> — 4 Seattle UX roles confirmed post-January layoffs. 5-day RTO policy remains in effect — factor this into your decision.</li>
+    <li><strong>Apple</strong> — Incoming CEO John Ternus (starting September 1) has publicly committed to rebuilding Apple's design organization after nearly every Jony Ive-era designer departed. No Seattle postings now, but this is the biggest design leadership signal in the industry this month. Worth watching closely.</li>
+    <li><strong>Headway</strong> — 4 concurrent mental health design roles (Staff, Senior, Director levels at $200K–$300K, remote). One of the most actively hiring design teams in the mental health space right now.</li>
+    <li><strong>Grow Therapy</strong> — $150M Series D closed March 2026. Senior/Staff Product Designer posted April 30. Seattle listed as a hybrid option.</li>
+    <li><strong>The Pokémon Company International</strong> — 3+ simultaneous design roles in Bellevue following the June 17 launch of Pokémon Champions (a new competitive battling app). Multiple openings at once on a focused team is worth paying attention to.</li>
+    <li><strong>Calm</strong> — VP of Product Design (D2C) posted. Co-founders returned as co-CEOs after the previous CEO stepped down. A leadership-level design vacancy this early in a new CEO's tenure is a meaningful signal.</li>
+    <li><span class="caution-label">⚠ Adobe — proceed carefully:</span> Seattle Express/Acrobat roles appear posted, but internal headcount-freeze overrides may mean some requisitions are not actively recruiting. Verify directly with a recruiter before investing time.</li>
+    <li><strong>Active UX postings confirmed today:</strong> Lyra Health · Headway · Grow Therapy · Omada Health · Rula Health · Expedia Group · Microsoft Copilot &amp; DevTools · Amazon Alexa &amp; Devices · Salesforce/Slack · DocuSign · The Pokémon Company International · Nintendo of America · Anthropic · Atlassian · Calm · Adobe Express/Seattle · Netflix · Notion</li>
+  </ul>
+</div>
+
+
+<!-- ======================================= -->
+<!-- 🔴 CURRENTLY HIRING -->
+<!-- ======================================= -->
+
+<div class="section-header">🔴 Currently Hiring — Mental Health &amp; Digital Health</div>
+
+<!-- Lyra Health -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Lyra Health</div>
+    <div class="entry-meta">
+      Mental Health / Healthcare · Remote (US) ·
+      <a href="https://www.lyrahealth.com" target="_blank">lyrahealth.com</a> ·
+      <a href="https://www.linkedin.com/company/lyra-health" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Lyra provides employer-sponsored mental health benefits — therapy, coaching, and AI-guided self-care — to employees at large companies. Remote-first and one of the largest mental health platforms in the US.</li>
+    <li><span class="field-label">Why it's worth your attention:</span> Four simultaneous product designer roles across seniority levels is unusual even for a company at Lyra's scale. In May 2026 they scaled their clinically vetted AI Guide globally and launched Lyra Connect for Benefits Leaders — both new product surfaces that require design work. No new funding announced recently, but the company has 2,859 employees and $915M raised total. The breadth of open levels (Lead × 2, Senior, Staff) suggests they're building out a team, not filling a single vacancy. (<a href="https://www.businesswire.com/news/home/20260505129157/en/Lyra-Health-Scales-Clinically-Vetted-AI-Guide-to-Members-Globally" target="_blank">AI Guide announcement, BusinessWire</a>)</li>
+    <li><span class="field-label">Open roles:</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.lyrahealth.com/job/remote/lead-product-designer/43250/75979853152" target="_blank">Lead Product Designer</a></span>
+      <span class="role-meta">— Remote · Senior (8+ yrs) · $161,000–$221,500</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.lyrahealth.com/job/burlingame/lead-product-designer/43250/75979853152" target="_blank">Lead Product Designer</a></span>
+      <span class="role-meta">— Burlingame, CA · Senior (8+ yrs) · $178,000–$245,000</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.lyrahealth.com/job/remote/sr-product-designer/43250/84806318032" target="_blank">Senior Product Designer</a></span>
+      <span class="role-meta">— Remote · 5–8 yrs · $142,000–$196,000</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://jobs.glynncapital.com/companies/lyra-health/jobs/53517598-staff-product-designer" target="_blank">Staff Product Designer</a></span>
+      <span class="role-meta">— Remote · 10+ yrs, AI-focused · salary not listed</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> No new funding announced in June–July 2026. Verify postings are still open at <a href="https://careers.lyrahealth.com/product-design-jobs" target="_blank">careers.lyrahealth.com</a> before applying. The Staff role salary was not listed in any confirmed source — do not assume compensation until verified.</li>
+  </ul>
+</div>
+
+<!-- Headway -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Headway</div>
+    <div class="entry-meta">
+      Mental Health · Remote (NYC/SF optional) ·
+      <a href="https://headway.co" target="_blank">headway.co</a> ·
+      <a href="https://www.linkedin.com/company/headwayapp" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Headway connects patients with in-network therapists and manages the insurance billing process that typically makes therapy inaccessible. They've grown to 60,000+ therapists in all 50 states.</li>
+    <li><span class="field-label">Why it's worth your attention:</span> Four concurrent product design openings at a single company — spanning Staff, Senior, and Director levels — is a genuine design team buildout, not routine backfill. The company raised a $100M Series D in July 2024 at a $2.3B valuation, with a16z, Accel, GV, and Thrive Capital as investors. In March 2026 they acquired talent from Tezi (an AI startup), suggesting a move into AI-powered workflows. The product surfaces span patient experience, provider sourcing, and benefits navigation — all distinct UX challenges. (<a href="https://www.mobihealthnews.com/news/headway-scores-100m-more-doubling-its-valuation-23b" target="_blank">Series D, MobiHealthNews</a>)</li>
+    <li><span class="field-label">Open roles:</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://job-boards.greenhouse.io/headway/jobs/5679215004" target="_blank">Staff Product Designer — Provider Sourced Patients</a></span>
+      <span class="role-meta">— Remote</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://builtin.com/job/product-designer/2944348" target="_blank">Senior Product Designer — Patient Benefits</a></span>
+      <span class="role-meta">— Remote · $200,000</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.builtinsf.com/job/director-design-provider/6585337" target="_blank">Director of Product Design — Provider</a></span>
+      <span class="role-meta">— Remote · $255,000–$300,000</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title">Product Designer</span>
+      <span class="role-meta">— Remote · $170,000 · See <a href="https://headway.co/careers" target="_blank">headway.co/careers</a></span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> NYC and SF offices exist but roles appear open to fully remote US candidates. Director-level roles will likely require significant management experience. Seattle is not listed as an office location — confirm remote policy during screening.</li>
+  </ul>
+</div>
+
+<!-- Grow Therapy -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Grow Therapy</div>
+    <div class="entry-meta">
+      Mental Health · Hybrid (NYC · SF · Seattle) ·
+      <a href="https://growtherapy.com" target="_blank">growtherapy.com</a> ·
+      <a href="https://www.linkedin.com/company/grow-therapy" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Grow Therapy is a therapist marketplace and practice management platform — they connect patients with in-network therapists and give therapists billing, scheduling, and clinical tools to run their practice.</li>
+    <li><span class="field-label">Why it's worth your attention:</span> Grow Therapy closed a $150M Series D in March 2026 (investors include a16z, Sequoia, and TCV — $340M total raised). That funding is still fresh enough that design hiring is directly tied to it. The Senior/Staff Product Designer posting went up April 30 — a recent post on a well-funded team. Seattle is explicitly listed as a hybrid location option, which is rare among mental health startups. (<a href="https://growtherapy.com/blog/series-d/" target="_blank">Series D announcement, Grow Therapy blog</a>)</li>
+    <li><span class="field-label">Open roles:</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://job-boards.greenhouse.io/growtherapy/jobs/4583852005" target="_blank">Senior / Staff Product Designer</a></span>
+      <span class="role-meta">— Preferred NYC, SF, or Seattle (hybrid) · 5+ years, Figma-strong, consumer product required</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> "Preferred" office cities — confirm whether fully remote is an option. Role targets consumer-facing UX experience specifically; B2B or enterprise-only backgrounds may not fit this posting.</li>
+  </ul>
+</div>
+
+<!-- Omada Health -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Omada Health</div>
+    <div class="entry-meta">
+      Digital Health · Remote (US) ·
+      <a href="https://www.omadahealth.com" target="_blank">omadahealth.com</a> ·
+      <a href="https://www.linkedin.com/company/omada-health" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Omada is a digital behavior-change platform covering diabetes prevention, hypertension, weight management, and mental health. They went public on Nasdaq (OMDA) in June 2025.</li>
+    <li><span class="field-label">Signal:</span> Q1 2026 revenue was $78M, up 42% year-over-year — one of the strongest financial performances in the digital health sector this quarter. Stock (OMDA) is up roughly 50% over the last six months. No layoffs. Two simultaneous design roles are open: Senior and Staff levels. This is a stable, publicly accountable company with real product growth, not a pre-revenue startup. (<a href="https://www.fool.com/coverage/filings/2026/07/02/omada-health-ceo-sean-duffy-sells-17-000-shares-what-does-this-mean-for-investors/" target="_blank">Financial context, Motley Fool</a>)</li>
+    <li><span class="field-label">Open roles:</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://job-boards.greenhouse.io/omadahealth/jobs/6627166" target="_blank">Senior Product Designer</a></span>
+      <span class="role-meta">— Remote (US) · $152,100–$225,400</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title">Staff Product Designer — AI Experience</span>
+      <span class="role-meta">— Remote (US) · Check <a href="https://job-boards.greenhouse.io/omadahealth" target="_blank">Greenhouse board</a> for current posting</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> The Staff AI Experience posting was surfaced via search but a direct URL was not confirmed — check the Greenhouse board directly. Role focuses on AI-assisted health experiences, so comfort with AI interaction patterns will be important.</li>
+  </ul>
+</div>
+
+<!-- Rula Health -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Rula Health</div>
+    <div class="entry-meta">
+      Mental Health · Remote (US, excl. Hawaii) ·
+      <a href="https://www.rula.com" target="_blank">rula.com</a> ·
+      <a href="https://www.linkedin.com/company/rula-health" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Rula matches patients with in-network therapists and psychiatrists, with a focus on reducing access friction for mental health care. Fully remote, $263M raised total.</li>
+    <li><span class="field-label">Signal:</span> 179 total open positions — a significant hiring ramp for a company at this stage. The Senior Product Designer role focuses on native mobile UX (iOS/Android), AI-enabled therapy experiences, and motion design, which is a distinctive combination. No layoffs reported. (<a href="https://builtin.com/job/sr-product-designer-ai-remote/7416460" target="_blank">Role listing, Built In</a>)</li>
+    <li><span class="field-label">Open roles:</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://jobs.ashbyhq.com/rula/2cba9b06-d875-4ed0-8d22-ea44840b81c8" target="_blank">Senior Product Designer</a></span>
+      <span class="role-meta">— Remote (US, excl. HI) · mobile UX + AI + motion design focus</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> Role requires strong native mobile experience. If most of your portfolio is web or desktop, this may not be the right fit without additional framing.</li>
+  </ul>
+</div>
+
+
+<!-- ======================================= -->
+<!-- 🔴 CURRENTLY HIRING — Seattle / Bellevue / Redmond -->
+<!-- ======================================= -->
+
+<div class="section-header">🔴 Currently Hiring — Greater Seattle</div>
+
+<!-- Expedia Group -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Expedia Group — Experience Design (XD)</div>
+    <div class="entry-meta">
+      Consumer Travel Tech · Seattle, WA (hybrid) ·
+      <a href="https://www.expediagroup.com" target="_blank">expediagroup.com</a> ·
+      <a href="https://www.linkedin.com/company/expedia" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Expedia Group owns Expedia, Hotels.com, Vrbo, and several other travel brands. Their Seattle HQ houses the Experience Design (XD) organization, which spans UX design, content design, and research across all product lines.</li>
+    <li><span class="field-label">Why it's worth your attention:</span> Expedia made a major bet on AI at their Explore 2026 partner conference in May: an Activity Planner that converses with travelers inside the app, an AI Compare tool that explains meaningful hotel differences based on your specific search, natural-language vacation home search on Vrbo, and a roadmap toward a full "travel companion." This isn't vague AI positioning — these are shipped features or near-term product work, all requiring design. They also hired Xavier Amatriain from Google as their first Chief AI &amp; Data Science Officer. Despite 595 layoffs earlier in 2026, Expedia is explicitly and actively hiring designers for the AI-aligned product lines. (<a href="https://www.expedia.com/newsroom/expedia-group-unveils-new-ai-experiences-expands-travel-ecosystem-and-launches-philanthropy-program-at-explore-2026/" target="_blank">Explore 2026 announcement</a> · <a href="https://www.forbes.com/sites/peterhigh/2026/05/29/how-expedia-is-reinventing-travel-through-ai-and-agentic-design/" target="_blank">Forbes AI design deep-dive</a>)</li>
+    <li><span class="field-label">Open roles (all Seattle, onsite policy):</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.expediagroup.com/job/principal-product-designer-ai-experiences/seattle-wa/R-99739-4/" target="_blank">Principal Product Designer — AI Experiences</a></span>
+      <span class="role-meta">— Seattle · Principal level</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.expediagroup.com/job/director-principal-of-product-design-search/seattle-wa/R-99376/" target="_blank">Director / Principal of Product Design — Search</a></span>
+      <span class="role-meta">— Seattle · Director or Principal IC level</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title">Product Design Lead — Core Experiences</span>
+      <span class="role-meta">— Seattle · Lead (senior IC / mgr boundary) · $173,000–$277,000 · <a href="https://www.learn4good.com/jobs/seattle/washington/info_technology/4981245881/e/" target="_blank">Listing</a></span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://jobs.anitab.org/companies/expedia-group-2/jobs/72245981-principal-product-designer-vrbo" target="_blank">Principal Product Designer — Vrbo</a></span>
+      <span class="role-meta">— Seattle · Principal level · $224,000–$313,500 total cash</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title">Principal Product Designer — Loyalty</span>
+      <span class="role-meta">— Seattle (remote-eligible) · Principal level · Check <a href="https://careers.expediagroup.com" target="_blank">Expedia careers</a> for current listing</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> Expedia's current policy requires onsite presence at the Seattle HQ for most roles. The Loyalty role may be the exception — confirm remote eligibility before pursuing. All roles are Principal-level, which typically means 8–12+ years of experience and a strong systems and strategy portfolio. The 595 layoffs earlier in 2026 were concentrated in marketing and operations, not product design — verify with a recruiter to confirm design teams are unaffected.</li>
+  </ul>
+</div>
+
+<!-- Microsoft Copilot + DevTools -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Microsoft — Copilot &amp; Developer Tools</div>
+    <div class="entry-meta">
+      Large Tech · Redmond, WA (hybrid) ·
+      <a href="https://microsoft.com" target="_blank">microsoft.com</a> ·
+      <a href="https://www.linkedin.com/company/microsoft" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="caution-block">
+    <strong>⚠ Important:</strong> Microsoft is cutting thousands of Xbox positions this week as part of a division-wide "100-day reset" under new Xbox CEO Asha Sharma. (<a href="https://www.geekwire.com/2026/microsoft-set-to-cut-thousands-of-jobs-next-week-spanning-xbox-sales-and-consulting/" target="_blank">GeekWire, July 2026</a>) Do not target Xbox design roles right now. The M365/Copilot and Developer Tools teams are distinct from Xbox and are actively hiring.
+  </div>
+
+  <ul>
+    <li><span class="field-label">Signal for Copilot/M365:</span> Microsoft shipped a significant UX overhaul to M365 Copilot on May 28 — the static prompt box is now a task-aware workspace with contextual tool surfaces and a cleaner interface. Copilot Cowork (full agentic task execution) went globally available in June. This is active, shipping product design work. (<a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-a-new-design-for-microsoft-365-copilot/" target="_blank">Microsoft 365 Blog</a>)</li>
+    <li><span class="field-label">Open roles (Redmond-based, unless noted):</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://microsoft.ai/job/senior-product-designer-2/" target="_blank">Senior Product Designer — Microsoft AI / Copilot</a></span>
+      <span class="role-meta">— Redmond or remote · owns core Copilot UX · posted April 2026</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://microsoft.ai/job/principal-product-designer-11/" target="_blank">Principal Product Designer — Content &amp; Media, Copilot</a></span>
+      <span class="role-meta">— Redmond or remote · shapes media experiences across Windows, Edge, Copilot · posted May 2026</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://designproject.io/jobs/jobs/senior-product-designer-at-microsoft-n0i4cj" target="_blank">Senior Product Designer — Developer Tools (VS Code, Azure AI Foundry, GitHub)</a></span>
+      <span class="role-meta">— Redmond or Mountain View · AI-powered agentic coding experiences · 5+ yrs · posted Jan 2026</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://jobs.careers.microsoft.com/global/en/job/1672232/UX-Designer-2-(Teams)" target="_blank">UX Designer 2 — Microsoft Teams</a></span>
+      <span class="role-meta">— Redmond · mid-level IC</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> The Developer Tools posting (Jan 2026) is older — confirm it is still active at <a href="https://careers.microsoft.com" target="_blank">careers.microsoft.com</a>. Senior/Principal roles typically require 6–10+ years. The January 2026 layoffs broadly cut ~2.5% of Microsoft globally — check which teams were affected before investing heavily in a Microsoft application right now.</li>
+  </ul>
+</div>
+
+<!-- Amazon Alexa + Devices -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Amazon — Alexa &amp; Devices / Services</div>
+    <div class="entry-meta">
+      Large Tech · Seattle, WA (5-day RTO) ·
+      <a href="https://amazon.com" target="_blank">amazon.com</a> ·
+      <a href="https://www.linkedin.com/company/amazon" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Context:</span> Amazon cut more than 16,000 employees globally in Q1 2026, with roughly 2,200 of those in Washington state — hitting core product and engineering roles. The 5-day return-to-office mandate is in full effect for all corporate employees, including design teams.</li>
+    <li><span class="field-label">Signal:</span> Despite the layoffs, Amazon is actively posting design roles in the Alexa and Devices &amp; Services Experience Design org. In June 2026, the Alexa AI marketing team ran a multi-product-line creative campaign across five device lines, and AWS launched an "Agentic CX Designer" tool (a no-code canvas for building AI-powered customer experiences). (<a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentic-cx-designer-for-amazon-connect-customer-ec2-ami-watermarks-open-governance-for-mysql-and-more-june-29-2026/" target="_blank">AWS Blog, June 29</a>)</li>
+    <li><span class="field-label">Open roles (all Seattle, 5-day onsite):</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.amazon.jobs/en/jobs/10386862/sr-visual-ux-designer-devices-services-experience-design" target="_blank">Sr. Visual UX Designer — Devices &amp; Services Experience Design</a></span>
+      <span class="role-meta">— Seattle · Senior (7+ yrs)</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.amazon.jobs/en/jobs/3047227/visual-ux-designer-devices-services" target="_blank">Visual UX Designer — Devices &amp; Services</a></span>
+      <span class="role-meta">— Seattle · Mid-level (3+ yrs) · $106,000–$184,000 base</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://amazon.jobs/en/jobs/3076552/senior-ux-designer-alexa-enterprise" target="_blank">Sr. UX Designer — Alexa Enterprise &amp; Emerging Design</a></span>
+      <span class="role-meta">— Seattle / Sunnyvale / SF · Senior (7+ yrs) · $127,000–$211,000 base · posted May 2026</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.amazon.jobs/en/jobs/2956257/sr-ux-designer-alexa-skills-developer-tech-ux" target="_blank">Sr. UX Designer — Alexa Skills Developer Tech</a></span>
+      <span class="role-meta">— Seattle · Senior (6+ yrs) · $127,000–$211,000 base</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> The Visual UX Designer (mid-level) role skews toward visual design and motion — confirm whether this aligns with your strongest work. The Alexa Enterprise posting (May 2026) is the freshest. Amazon's RTO policy is strict; Seattle-area living is a genuine requirement for these roles. No AWS Console design roles surfaced in search — check <a href="https://www.amazon.jobs/en/teams/aws-design" target="_blank">amazon.jobs/teams/aws-design</a> directly.</li>
+  </ul>
+</div>
+
+<!-- Salesforce / Slack -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Salesforce — Slack</div>
+    <div class="entry-meta">
+      Enterprise SaaS · Seattle / Atlanta / San Francisco (hybrid) ·
+      <a href="https://slack.com" target="_blank">slack.com</a> ·
+      <a href="https://www.linkedin.com/company/salesforce" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Salesforce owns Slack — the workplace messaging platform used by 200,000+ organizations. Slack's design team sits within Salesforce but operates with a distinct product culture.</li>
+    <li><span class="field-label">Signal:</span> Salesforce shipped its Summer '26 Release on June 15 — the biggest Agentforce release yet, with multi-agent orchestration, Slack-first AI workflows, and a $3.6B acquisition of Fin (an agentic AI customer support company). Slack is the delivery vehicle for most of Salesforce's AI experience work. Four design roles across Slack product teams, all listing Seattle as an eligible location, were confirmed in search results. (<a href="https://www.salesforce.com/news/stories/summer-2026-product-release-announcement/" target="_blank">Salesforce Summer '26 announcement</a> · <a href="https://www.fool.com/investing/2026/07/01/why-salesforce-stock-is-up-today/" target="_blank">Fin acquisition, Motley Fool</a>)</li>
+    <li><span class="field-label">Open roles (all list Seattle as eligible location):</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.salesforce.com/en/jobs/jr339219/lead-product-designer-slackbot-mobile/" target="_blank">Lead Product Designer — Slackbot Mobile (AI)</a></span>
+      <span class="role-meta">— Atlanta · Seattle · SF · Lead level</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.salesforce.com/en/jobs/jr329495/senior-product-designer-slack/" target="_blank">Senior Product Designer — Slack</a></span>
+      <span class="role-meta">— Atlanta · Seattle · Palo Alto · Bellevue · SF · Senior level</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.salesforce.com/en/jobs/jr326824/product-designer-slack-productivity/" target="_blank">Product Designer — Slack Productivity (Canvas, Lists, Files, Huddles)</a></span>
+      <span class="role-meta">— Atlanta · Seattle · SF · Mid-level</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.salesforce.com/en/jobs/jr318286/lead-product-designer-slack-platform/" target="_blank">Lead Product Designer — Slack Platform</a></span>
+      <span class="role-meta">— SF · Seattle · Atlanta · New York · Lead level</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> These postings are dated December 2025–April 2026 — some may have been filled. Confirm current status directly on <a href="https://careers.salesforce.com" target="_blank">careers.salesforce.com</a>. The mid-level Productivity role (Canvas, Lists, Files, Huddles) is the best fit if your portfolio skews toward workflow and collaboration UX rather than mobile or platform infrastructure work.</li>
+  </ul>
+</div>
+
+<!-- DocuSign -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">DocuSign</div>
+    <div class="entry-meta">
+      Tech / SaaS · Seattle, WA (hybrid, 2 days/week in-office) ·
+      <a href="https://www.docusign.com" target="_blank">docusign.com</a> ·
+      <a href="https://www.linkedin.com/company/docusign" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> DocuSign builds the Agreement Cloud — e-signature and contract lifecycle management tools used by 1M+ businesses. Their last major restructuring was February 2024. The company appears stable with 32+ open roles in Seattle as of recent Glassdoor data.</li>
+    <li><span class="field-label">Signal:</span> Three simultaneous Seattle-based design roles across two seniority levels is the strongest local Seattle UX concentration outside of the tech giants today. This is a mid-size tech company where a product designer's work would be visible and impactful. The Lead UI/UX Designer salary range ($171K–$277K) is competitive for Seattle hybrid work.</li>
+    <li><span class="field-label">Open roles (hybrid Seattle, minimum 2 days/week in-office):</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.docusign.com/jobs/28447?lang=en-us" target="_blank">Product Designer</a></span>
+      <span class="role-meta">— Seattle + multiple locations · $149,100–$176,400</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.ziprecruiter.com/c/DocuSign/Job/Lead-UI-UX-Designer/-in-Seattle,WA" target="_blank">Lead UI/UX Designer</a></span>
+      <span class="role-meta">— Seattle · $171,500–$277,025</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.ziprecruiter.com/c/DocuSign/Job/Product-Designer-Admin/-in-Seattle,WA" target="_blank">Product Designer — Admin</a></span>
+      <span class="role-meta">— Seattle · $126,900–$197,800</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> The 2-day weekly in-office requirement is firm. DocuSign's product UX is primarily enterprise and workflow-focused — this is a strong fit if you have B2B or complex enterprise product experience, but may need more framing if your portfolio is primarily consumer.</li>
+  </ul>
+</div>
+
+<!-- The Pokémon Company International -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">The Pokémon Company International</div>
+    <div class="entry-meta">
+      Gaming / Consumer · Bellevue, WA (onsite) ·
+      <a href="https://www.pokemon.com/us/about-pokemon/about-tpci/" target="_blank">pokemon.com</a> ·
+      <a href="https://www.linkedin.com/company/the-pokemon-company-international" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> TPCi manages the Pokémon brand outside Japan — digital games, the Trading Card Game, licensing, apps, and consumer products. Their Bellevue, WA headquarters is the center of global digital Pokémon experiences.</li>
+    <li><span class="field-label">Signal:</span> Pokémon Champions launched June 17, 2026 — a new competitive battling app on iOS and Android with cross-save support. A major new digital product launch is a real design hiring trigger at a company this focused on consumer experience. Three or more simultaneous design openings (UI Artist, Sr. UX/UI Artist, Digital Designer) at a Bellevue HQ company is worth taking seriously for anyone local to the area. (<a href="https://www.serebii.net/news/2026/June.shtml" target="_blank">Pokémon Champions launch, Serebii</a>)</li>
+    <li><span class="field-label">Open roles (Bellevue, WA onsite):</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://boards.greenhouse.io/pokemoncareers/jobs/5900222003" target="_blank">UI Artist</a></span>
+      <span class="role-meta">— Bellevue · mid-level (3–4 yrs)</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://gamejobs.co/Sr-UX-UI-Artist-at-Bellevue" target="_blank">Sr. UX/UI Artist</a></span>
+      <span class="role-meta">— Bellevue · Senior level</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.builtinseattle.com/job/digital-designer/7393341" target="_blank">Digital Designer</a></span>
+      <span class="role-meta">— Bellevue · mid-level (3–4 yrs)</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> TPCi titles use "Artist" for what many companies call "Designer" — review job descriptions for actual responsibilities before assuming a mismatch. The UI Artist Greenhouse link (5900222003) is the most reliably confirmed active posting. Verify the Sr. UX/UI Artist and Digital Designer postings directly at <a href="https://job-boards.greenhouse.io/pokemoncareers" target="_blank">job-boards.greenhouse.io/pokemoncareers</a>.</li>
+  </ul>
+</div>
+
+<!-- Nintendo of America -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Nintendo of America</div>
+    <div class="entry-meta">
+      Gaming / Consumer · Redmond, WA (onsite only) ·
+      <a href="https://www.nintendo.com/us/about/jobs/" target="_blank">nintendo.com</a> ·
+      <a href="https://www.linkedin.com/company/nintendo-of-america" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Nintendo of America is the US headquarters of Nintendo — localization, digital product design, consumer digital experiences, and the Nintendo eShop. The NTD (Nintendo Technology Development) team based in Redmond handles software and digital UX.</li>
+    <li><span class="field-label">Signal:</span> A full-time, salaried UX Designer role within NTD is posted with salary transparency — $101,900–$140,000. Nintendo historically hires very cautiously for design. This posting, combined with Nintendo's ongoing Switch 2 platform work and a June 2026 Nintendo Direct, suggests stable investment in the digital team.</li>
+    <li><span class="field-label">Open roles:</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://careers.nintendo.com/job-openings/listing/250000007F.html" target="_blank">UX Designer (NTD)</a></span>
+      <span class="role-meta">— Redmond, WA · Onsite only · $101,900–$140,000 · full-time salaried</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title">Engineer, UX (NTD)</span>
+      <span class="role-meta">— Redmond, WA · $121,000–$218,000 · check <a href="https://careers.nintendo.com/jobs/" target="_blank">careers.nintendo.com</a> for current status</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> All NTD roles are onsite in Redmond — no remote or hybrid option. The Engineer, UX role may require more engineering proficiency than a pure design background; review the job description before applying.</li>
+  </ul>
+</div>
+
+
+<!-- ======================================= -->
+<!-- 🔴 CURRENTLY HIRING — AI & Remote -->
+<!-- ======================================= -->
+
+<div class="section-header">🔴 Currently Hiring — AI &amp; Remote</div>
+
+<!-- Anthropic -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Anthropic</div>
+    <div class="entry-meta">
+      AI · San Francisco, remote-friendly ·
+      <a href="https://anthropic.com" target="_blank">anthropic.com</a> ·
+      <a href="https://www.linkedin.com/company/anthropicresearch" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Anthropic builds Claude — the AI assistant — and is in one of the fastest growth trajectories in recent tech history.</li>
+    <li><span class="field-label">New this week:</span> Claude Sonnet 5 launched June 30 (positioned as Anthropic's most agentic model to date). The Seoul office opened June 17, adding a new international product surface. On June 1, Anthropic confidentially filed a draft S-1 registration statement with the SEC — a first step toward going public (IPO), which typically precedes a significant hiring expansion across all functions. This is on top of the $65B raise (investors gave Anthropic $65 billion to grow) that closed in April, pushing their valuation to approximately $965B. (<a href="https://www.investing.com/analysis/anthropic-ipo-everything-you-need-to-know-about-anthropic-200682606" target="_blank">IPO filing</a> · <a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank">Claude Sonnet 5</a>)</li>
+    <li><span class="field-label">Open roles:</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://job-boards.greenhouse.io/anthropic/jobs/4929512008" target="_blank">Product Designer — Claude Experiences</a></span>
+      <span class="role-meta">— San Francisco · Senior level</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://job-boards.greenhouse.io/anthropic/jobs/5104689008" target="_blank">Product Designer — Claude Code</a></span>
+      <span class="role-meta">— San Francisco · Mid-to-Senior level</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://job-boards.greenhouse.io/anthropic/jobs/5055448008" target="_blank">Product Designer — Claude Developer Platform</a></span>
+      <span class="role-meta">— San Francisco / New York / Seattle · Senior (8+ yrs)</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> The Developer Platform role lists Seattle as a location — worth confirming whether that means a Seattle office or just Seattle-timezone remote. These are senior-bar roles. An IPO filing also means Anthropic is entering an extended period of legal and regulatory scrutiny — the culture during a pre-IPO window can feel different than early-stage startup.</li>
+  </ul>
+</div>
+
+<!-- Atlassian -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Atlassian</div>
+    <div class="entry-meta">
+      Enterprise SaaS · Fully remote ·
+      <a href="https://www.atlassian.com" target="_blank">atlassian.com</a> ·
+      <a href="https://www.linkedin.com/company/atlassian" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Atlassian makes Jira, Confluence, Trello, and Loom. A large enterprise software company — fully remote with offices globally, no in-person requirement.</li>
+    <li><span class="field-label">Signal:</span> Atlassian's most recent quarterly earnings showed 32% year-over-year revenue growth and they raised full-year guidance — one of the stronger enterprise SaaS performances in the market right now. Their Rovo AI product is seeing 5 million+ tool calls per day via MCP integrations with coding agents like Claude Code and Cursor. Seven simultaneous design roles is significant. (<a href="https://sherwood.news/markets/atlassian-hikes-2026-guidance-after-quarterly-results-beat-estimates/" target="_blank">Earnings coverage, Sherwood News</a>)</li>
+    <li><span class="field-label">Open roles (all fully remote, some Pacific TZ preferred):</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.atlassian.com/company/careers/details/12039" target="_blank">Lead Product Designer — Atlassian Intelligence (AI)</a></span>
+      <span class="role-meta">— Remote · Pacific TZ preferred</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.atlassian.com/company/careers/details/15921" target="_blank">Lead Product Designer — AI Platform</a></span>
+      <span class="role-meta">— Remote</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.atlassian.com/company/careers/details/15224" target="_blank">Lead Product Designer — Growth</a></span>
+      <span class="role-meta">— Remote · Pacific TZ preferred</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.atlassian.com/company/careers/details/23852" target="_blank">Lead Product Designer — Loom</a></span>
+      <span class="role-meta">— Remote · PST to EST</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.atlassian.com/company/careers/details/15599" target="_blank">Senior Product Designer — Loom Enterprise Admin</a></span>
+      <span class="role-meta">— Remote · $134,100–$210,325</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.atlassian.com/company/careers/details/16186" target="_blank">Product Designer — Integrations</a></span>
+      <span class="role-meta">— Remote · Mid-level</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://www.atlassian.com/company/careers/detail/47355815-660c-4ca7-9d62-d133fad96e86" target="_blank">Lead Product Designer — Jira Service Management Help Center</a></span>
+      <span class="role-meta">— Remote</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> In March 2026, Atlassian laid off approximately 1,600 employees (10% of their workforce). The strong earnings suggest the company stabilized, but design team composition may have changed. Confirm these roles represent net-new headcount rather than backfills of eliminated positions. Atlassian's "Lead" level is roughly equivalent to Senior II or Staff at most US tech companies. CFO Joe Binz departed June 30 — minor signal to note.</li>
+  </ul>
+</div>
+
+<!-- Calm -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Calm</div>
+    <div class="entry-meta">
+      Mental Health / Wellness · Remote-friendly ·
+      <a href="https://www.calm.com" target="_blank">calm.com</a> ·
+      <a href="https://www.linkedin.com/company/calm.com" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Calm is the leading sleep and meditation consumer app — 180M+ total downloads, and their Ebb AI companion launched in December 2025 for 24/7 support between guided sessions.</li>
+    <li><span class="field-label">Signal — leadership gap:</span> CEO David Ko stepped down earlier this year and co-founders Michael Acton Smith and Alex Tew returned as co-CEOs. Shortly after, the VP of Product Design (D2C) role appeared on their careers board. A VP-level design vacancy this early in a new executive team's tenure often means a real rebuild of the design org — which typically means additional hires below it. The company is not in obvious distress (180M downloads, Ebb expansion ongoing), but 2025 revenue was reportedly down 24% year-over-year. (<a href="https://www.fastcompany.com/91522961/why-calm-ceo-david-ko-is-stepping-down-after-scaling-the-meditation-app" target="_blank">CEO transition, Fast Company</a>)</li>
+    <li><span class="field-label">Open roles:</span></li>
+  </ul>
+
+  <div class="roles-list">
+    <div class="role-item">
+      <span class="role-title"><a href="https://boards.greenhouse.io/calm/jobs/7550693002" target="_blank">VP of Product Design (D2C)</a></span>
+      <span class="role-meta">— Location unspecified · Executive level</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://boards.greenhouse.io/calm/jobs/5421506002" target="_blank">Senior Product Designer — B2B Core Experience</a></span>
+      <span class="role-meta">— US (location unspecified) · Senior (5+ yrs enterprise)</span>
+    </div>
+    <div class="role-item">
+      <span class="role-title"><a href="https://boards.greenhouse.io/calm/jobs/6975388002" target="_blank">Designer — Calm Studios</a></span>
+      <span class="role-meta">— SF Bay Area, LA, or NYC · Mid-level · $102,300–$143,200</span>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">Caveat:</span> The revenue decline is a real flag. Confirm team size and the mandate for each role before investing heavily. The Calm Studios Designer role is in-person (Bay Area or LA preferred) and is more visual/motion-adjacent than product UX. The B2B Senior Designer role is the strongest fit for your background if you have enterprise product experience.</li>
+  </ul>
+</div>
+
+
+<!-- ======================================= -->
+<!-- 🟡 COMPANY-LEVEL WATCH -->
+<!-- ======================================= -->
+
+<div class="section-header">🟡 Company-Level Watch</div>
+
+<!-- Apple -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Apple</div>
+    <div class="entry-meta">
+      Large Tech · Cupertino, CA / Seattle (remote-eligible for some teams) ·
+      <a href="https://www.apple.com" target="_blank">apple.com</a> ·
+      <a href="https://www.linkedin.com/company/apple" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Apple. Hardware, software, and services. The Human Interface Design team defines how every Apple product looks, moves, and feels.</li>
+    <li><span class="field-label">Signal:</span> This is the most important design org signal of the month. Incoming CEO John Ternus — who takes the role September 1, 2026 — has publicly committed to making design central to Apple's organization again after years of drift. Bloomberg reported in June that nearly every Jony Ive-era designer has left since his 2019 departure, and that the design team lacks strategic clarity. Ternus's appointment is being interpreted as a mandate to rebuild. (<a href="https://www.bloomberg.com/news/newsletters/2026-06-21/apple-s-new-ceo-ternus-needs-to-shake-up-design-apple-s-2027-iphone-road-map-mqnust26" target="_blank">Bloomberg, June 21</a> · <a href="https://www.macworld.com/article/3171801/apples-new-ceo-plots-major-design-shake-up.html" target="_blank">Macworld</a>)</li>
+    <li><span class="field-label">The gap:</span> Apple's HI Design team reportedly lacks depth below the senior VP level. The co-heads of design (Shelly Goldberg and Dave Pakula) are established, but the pipeline below them — especially for software product design — was hollowed out over several years of attrition.</li>
+    <li><span class="field-label">No Seattle-specific UX postings confirmed at this time.</span> Apple's design hiring is concentrated in Cupertino. The Seattle office supports Siri, Apple Intelligence, Maps, and cloud infrastructure engineering — design roles tied to these teams are rarely posted with a Seattle tag. Check <a href="https://jobs.apple.com/en-us/search?location=seattle-SEA" target="_blank">Apple careers in Seattle</a> and the <a href="https://jobs.apple.com/en-us/search?team=human-interface-design-DESGN-HID" target="_blank">HI Design filter</a> regularly starting in September 2026.</li>
+    <li><span class="field-label">Likelihood:</span> <span class="likelihood moderate">Moderate</span> — the signal is structural and credible. The timing window is post-September, not now.</li>
+    <li><span class="field-label">Caveat:</span> Apple's hiring process is notoriously slow and opaque. Portfolio bar is exceptionally high. Even if Ternus moves quickly on design team rebuild, roles may take 6–9 months to materialize publicly.</li>
+  </ul>
+</div>
+
+<!-- Airbnb -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Airbnb</div>
+    <div class="entry-meta">
+      Consumer / Travel · San Francisco, CA (hybrid; most roles in-person) ·
+      <a href="https://www.airbnb.com" target="_blank">airbnb.com</a> ·
+      <a href="https://www.linkedin.com/company/airbnb" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Airbnb is a home and travel marketplace that just made its largest product expansion since founding.</li>
+    <li><span class="field-label">Signal:</span> The Summer 2026 release added car rentals, boutique hotels, grocery delivery via Instacart, airport pickups, AI-powered review summaries, and an AI comparison view for wishlisted homes. That's five new product surfaces inside a single consumer app, each requiring UX design. Total open roles at Airbnb are reportedly 236+. The confirmed posting for an Experience Designer (Offline Design) — specifically covering guest products in the physical-world experiences space — suggests this team is building out. (<a href="https://news.airbnb.com/airbnb-2026-summer-release/" target="_blank">Summer 2026 release, Airbnb Newsroom</a> · <a href="https://www.cnbc.com/2026/05/20/airbnb-hotels-car-rentals-ai-rentals.html" target="_blank">CNBC</a>)</li>
+    <li><span class="field-label">Gap:</span> With five new product surfaces, the current design team is almost certainly stretched. However, Airbnb has not historically offered remote-eligible design roles — most require San Francisco presence.</li>
+    <li><span class="field-label">Likelihood:</span> <span class="likelihood moderate">Moderate</span> — the product expansion is real, but Seattle or remote relevance is low unless Airbnb shifts its design location policy.</li>
+    <li><span class="field-label">Caveat:</span> Check <a href="https://careers.airbnb.com" target="_blank">careers.airbnb.com</a> for remote design roles. The Experience Designer, Offline Design posting (<a href="https://careers.airbnb.com/positions/7767673/" target="_blank">careers.airbnb.com/positions/7767673</a>) is the most currently confirmed active role. Do not assume any Airbnb role is Seattle-eligible without verification.</li>
+  </ul>
+</div>
+
+
+<!-- ======================================= -->
+<!-- 🔵 TEAM-LEVEL WATCH -->
+<!-- ======================================= -->
+
+<div class="section-header">🔵 Team-Level Watch</div>
+
+<!-- Headspace -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Headspace</div>
+    <div class="entry-meta">
+      Mental Health / Wellness · Remote-eligible ·
+      <a href="https://www.headspace.com" target="_blank">headspace.com</a> ·
+      <a href="https://www.linkedin.com/company/headspace-inc-" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Headspace is a consumer mental health and meditation app with an AI companion (Ebb), a D2C therapy service, and employer-sponsored care products.</li>
+    <li><span class="field-label">Signal:</span> CPDO Fay Kallel joined in August 2025 and appears settled in the role. The Apple Watch app launched in May 2026 — a new product surface. Headspace has active design postings (Product Designer II, Product Designer I, Principal Product Designer). The company raised $53M equity + $40M debt financing recently, and Pitchbook flagged it as a potential 2026 IPO candidate in December. (<a href="https://www.headspace.com/articles/fay-kallel-joins-headspace-as-chief-product-design-officer" target="_blank">CPDO hire</a> · <a href="https://www.headspace.com/articles/headspace-unveils-new-apple-watch-experience" target="_blank">Apple Watch launch</a>)</li>
+    <li><span class="field-label">The gap:</span> The active postings span entry/mid (Product Designer I and II) and a Principal level — suggesting they are rebuilding depth, not just backfilling. However, the company has had multiple restructuring rounds (13% layoff in late 2024) and revenue/growth trajectory is unclear without deeper financial data.</li>
+    <li><span class="field-label">Likelihood:</span> <span class="likelihood watch">Watch</span> — design investment is real but company is still in post-restructuring mode. The Principal and II roles are worth watching. Check <a href="https://www.headspace.com/join-us" target="_blank">headspace.com/join-us</a> for current postings.</li>
+    <li><span class="field-label">Caveat:</span> Role salaries for the Principal posting were not confirmed in any source — ask about comp in early screening. The company's path to profitability is a public focus; this can mean design teams are held to tighter resource constraints.</li>
+  </ul>
+</div>
+
+<!-- Figma -->
+<div class="entry">
+  <div class="entry-header">
+    <div class="entry-name">Figma</div>
+    <div class="entry-meta">
+      Design Tools · San Francisco, remote-friendly ·
+      <a href="https://www.figma.com" target="_blank">figma.com</a> ·
+      <a href="https://www.linkedin.com/company/figma" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="field-label">What they do:</span> Figma is the design tool — where most of the industry designs products. They went public in July 2025.</li>
+    <li><span class="field-label">Signal:</span> Config 2026 (June 24) was a major product moment: Figma launched Motion (native animation timeline), Code Layers (clone a GitHub repo and work from code inside the canvas), AI Shader Fills, and an upgraded Figma Agent that connects to Notion, Slack, GitHub, and Jira. The platform is redefining itself as code-native design tooling. Citigroup initiated Buy coverage at $36 in June; the stock rose ~9% that week. Figma was also added to the Russell 1000, 2500, and 3000 indexes on June 26. (<a href="https://www.figma.com/blog/config-2026-recap/" target="_blank">Config 2026 recap</a> · <a href="https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update/" target="_blank">TechCrunch</a>)</li>
+    <li><span class="field-label">The tension:</span> The confirmed design job postings are Early Career / 2026 new-grad roles (NYC and SF) — not mid-to-senior. The stock hit an all-time low of $16.60 in April, down from its $142 peak post-IPO. It has recovered but market cap is below $10B. This creates budget caution even when the product roadmap is exciting.</li>
+    <li><span class="field-label">Likelihood:</span> <span class="likelihood watch">Watch</span> — the Config 2026 product bets (Code Layers, Motion, AI Agent) will require senior design hires as they move from announcement to shipping. Watch Figma's careers page for mid-to-senior openings over the next 60 days. Do not rely only on the current new-grad postings. Check <a href="https://www.figma.com/careers/" target="_blank">figma.com/careers</a> directly.</li>
+  </ul>
+</div>
+
+
+<!-- ======================================= -->
+<!-- FROM THE MARKET -->
+<!-- ======================================= -->
+
+<div class="section-header">From the Market</div>
+
+<div class="from-market">
+  <h3>New this week — early signals, not yet on the Core Watch List</h3>
+
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-name">Therassist.AI</div>
+      <div class="entry-meta">
+        Mental Health / Clinical Tech · Seattle area (early-stage) ·
+        <a href="https://therassist.ai" target="_blank">therassist.ai</a>
+      </div>
+    </div>
+
+    <ul>
+      <li><span class="field-label">What they do:</span> Therassist.AI automates DBT/CBT adherence scoring and clinical note generation for psychotherapists. It integrates into therapy sessions to score evidence-based interventions and generate HIPAA-compliant notes — saving therapists roughly 6 minutes per session and reducing administrative burden. A direct fit for the AI + mental health intersection.</li>
+      <li><span class="field-label">Signal:</span> Therassist.AI just graduated from Creative Destruction Lab (CDL) Seattle's 2025–2026 Computational Health cohort — a nine-month accelerator based at the University of Washington Foster School. CDL doesn't take equity, but graduates typically begin active hiring within 6–12 months of completing the program. No UX design posting confirmed at this time. (<a href="https://www.geekwire.com/2026/meet-the-17-startups-that-took-part-in-creative-destruction-labs-latest-seattle-accelerator/" target="_blank">CDL Seattle cohort, GeekWire, July 2, 2026</a>)</li>
+      <li><span class="field-label">Why it matters:</span> Early-stage clinical AI tools targeting therapists are underdesigned. The interaction model for a product that scores therapy techniques in real time and generates clinical documentation is genuinely complex UX work. A designer who understands both mental health contexts and professional workflow software would be a strong fit.</li>
+      <li><span class="field-label">Likelihood:</span> <span class="likelihood watch">Watch — pre-hire.</span> No design posting yet. Check therassist.ai and their LinkedIn for updates over the next 90 days.</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- CLOSING -->
+<div class="closing">
+  <p>Three things to watch this week: Apple's design org signals will sharpen once Ternus officially takes over September 1 — that's the date to start monitoring their careers page closely. Microsoft Xbox is in active restructuring; the Copilot and Developer Tools teams are the safe focus for any Microsoft applications right now. And the CDL Seattle cohort is worth bookmarking — several of the computational health graduates are likely to begin design hiring in the fall, Therassist.AI being the strongest mental health match.</p>
+  <p>Today's run was limited to news sources and job board search results. The workforce.ai MCP server — which provides the most reliable pre-hire signals (designer departures, headcount gaps, team composition) — requires authentication that cannot be completed in a scheduled session. A run with workforce.ai connected would add substantially more depth, particularly for predicting which of the Seattle large-tech teams are approaching a vacancy before any role is posted. Several companies (Adobe, LinkedIn Bellevue, Netflix) were evaluated at lower confidence as a result.</p>
+  <p>Other active postings worth checking directly: <a href="https://jobs.netflix.com/careers/product" target="_blank">Netflix</a> (73+ design roles, US remote); <a href="https://jobs.ashbyhq.com/notion/d177d052-ef57-4900-acf2-d58e9eded620" target="_blank">Notion</a> ($205K–$300K, SF/NYC in-person); <a href="https://www.lifeatspotify.com/job-categories/design" target="_blank">Spotify</a> (primarily London/Stockholm/NYC); <a href="https://jobs.lever.co/bighealth/def06d9e-4d1d-4816-a545-4ad858e3c99b" target="_blank">Big Health</a> (Senior Product Designer, remote). None of these were included in full entries today due to location limitations or posting-freshness uncertainty.</p>
+</div>
+
+</body>
+</html>

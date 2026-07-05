@@ -251,8 +251,7 @@
       "discovery_note": "Surfaced in July 2 Seattle startup funding market scan. Raised $107M seed round led by ARCH Venture Partners on June 25, 2026. Agentic AI platform for regulated industries: healthcare, national security, energy. Plans to grow from ~20 to ~100 Seattle-area employees. Hired Baskar Sridharan (AWS/Google/Microsoft) as President. No UX or product designer posting confirmed — flagged as pre-hire signal. Sources: GeekWire (geekwire.com/2026/after-hiring-aws-exec-and-raising-107m-seed-round-virginia-startup-plants-flag-in-seattle-area/), MobiHealthNews.",
       "status": "active",
       "dropped_reason": null
-    }
-  ],
+    },
     {
       "name": "Carbon Robotics",
       "ldc_id": null,
@@ -262,6 +261,18 @@
       "location": "Seattle, WA",
       "work_model": "On-site (4 days/week)",
       "discovery_note": "Surfaced in July 4 Seattle UX market scan. AgriTech robotics company building AI-powered laser weeding robots. $157M total funding including NVIDIA's venture arm (NVentures). Sr. UX/UI Designer role confirmed active on LinkedIn (linkedin.com/jobs/view/ux-ui-designer-at-carbon-robotics-4308505004) and mediabistro.com. Role requires 4 days/week in-person at Seattle HQ. Outside Bhavika's primary target industries (tech/SaaS and healthcare/mental health) but Seattle-based with genuine UX complexity — hardware + software + agricultural field research. Verify at carbonrobotics.com/job-openings.",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "Therassist.AI",
+      "ldc_id": null,
+      "discovered_date": "2026-07-05",
+      "source": "market_scan_web_search — CDL Seattle accelerator cohort (GeekWire, July 2, 2026)",
+      "industry": "Healthcare/MedTech",
+      "location": "Seattle, WA",
+      "work_model": "Unknown",
+      "discovery_note": "Surfaced in July 5 market scan via CDL Seattle accelerator cohort coverage (GeekWire, July 2, 2026). Mental health AI tool that uses NLP to score therapy session transcripts against DBT/CBT frameworks — assists therapists with session quality tracking and evidence-based practice adherence. Pre-hire signal: early-stage startup, product UX is in early formation. Strong thematic match with Bhavika's mental health and AI interest areas. No UX posting confirmed — monitor company careers page once it launches publicly.",
       "status": "active",
       "dropped_reason": null
     }
