@@ -275,6 +275,18 @@
       "discovery_note": "Surfaced in July 5 market scan via CDL Seattle accelerator cohort coverage (GeekWire, July 2, 2026). Mental health AI tool that uses NLP to score therapy session transcripts against DBT/CBT frameworks — assists therapists with session quality tracking and evidence-based practice adherence. Pre-hire signal: early-stage startup, product UX is in early formation. Strong thematic match with Bhavika's mental health and AI interest areas. No UX posting confirmed — monitor company careers page once it launches publicly.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "TwelveLabs",
+      "ldc_id": null,
+      "discovered_date": "2026-07-07",
+      "source": "market_scan_web_search — July 2026 AI funding roundup (techstartups.com, July 2, 2026)",
+      "industry": "Tech/SaaS",
+      "location": "San Francisco, CA (HQ); Seattle-area presence (Amazon investor, AWS partnership)",
+      "work_model": "Hybrid",
+      "discovery_note": "Surfaced in July 7 market scan. Raised $100M Series B on July 1, 2026 — led by NEA with participation from Naver Ventures and Amazon. Video AI understanding platform: enables search, summarization, and analysis of video content at scale. 192 employees as of May 2026. Staff Product Designer role confirmed active on Ashby: jobs.ashbyhq.com/twelve-labs/5b54caff-ce8f-4d63-93cc-c4931216e55f. Strong signal: freshly closed Series B + active senior IC design posting within days. Source: techstartups.com (July 2, 2026).",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
