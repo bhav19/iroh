@@ -311,6 +311,18 @@
       "discovery_note": "Surfaced in July 15 mental health startup market scan. Behavioral health platform connecting patients with therapists and psychiatrists — three-sided model (patients, clinicians, payers). Nationwide coverage (all 50 states + DC) as of early 2025. ~1,234 employees, 12,000+ contracted clinicians. Raised $150M Series C (unicorn, 2021) led by Drive Capital and Premji Invest; total funding ~$276M. Recently hired both a Chief Financial Officer and a Chief Product Officer — product leadership investment signal. Senior Product Designer role confirmed active on Greenhouse ($115K–$145K): boards.greenhouse.io/sondermind/jobs/6276413003. Salary below market median for senior IC at unicorn-stage company. Denver HQ; verify remote eligibility before actioning.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Helion Energy",
+      "ldc_id": null,
+      "discovered_date": "2026-07-17",
+      "source": "market_scan_web_search — Seattle startup funding scan (GeekWire, June 2026)",
+      "industry": "Tech/SaaS",
+      "location": "Everett, WA",
+      "work_model": "On-site (likely)",
+      "discovery_note": "Surfaced in July 17 Seattle funding scan. Raised $465M Series G on June 4-5, 2026 — valuation now $15.5B, total capital raised exceeds $1.5B. Building next-generation fusion energy systems; Microsoft is a committed customer. Breaking ground on a new facility in Everett, WA creating 150+ jobs. Currently testing Polaris (7th-gen fusion device) and building Tiny Merge. No UX or product designer posting confirmed — early watch. As the facility and enterprise-facing product surface scale, UX roles (operator interfaces, dashboards, internal tooling, public-facing design) are plausible. Sources: GeekWire (geekwire.com/2026/helion-hits-15-5b-valuation-with-465m-in-new-cash-to-commercialize-fusion-this-decade/), helionenergy.com/newsroom.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
