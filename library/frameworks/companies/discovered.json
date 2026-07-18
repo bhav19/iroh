@@ -323,6 +323,18 @@
       "discovery_note": "Surfaced in July 17 Seattle funding scan. Raised $465M Series G on June 4-5, 2026 — valuation now $15.5B, total capital raised exceeds $1.5B. Building next-generation fusion energy systems; Microsoft is a committed customer. Breaking ground on a new facility in Everett, WA creating 150+ jobs. Currently testing Polaris (7th-gen fusion device) and building Tiny Merge. No UX or product designer posting confirmed — early watch. As the facility and enterprise-facing product surface scale, UX roles (operator interfaces, dashboards, internal tooling, public-facing design) are plausible. Sources: GeekWire (geekwire.com/2026/helion-hits-15-5b-valuation-with-465m-in-new-cash-to-commercialize-fusion-this-decade/), helionenergy.com/newsroom.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Thira",
+      "ldc_id": null,
+      "discovered_date": "2026-07-18",
+      "source": "market_scan_web_search — GeekWire July 14, 2026",
+      "industry": "Tech/SaaS",
+      "location": "Bellevue, WA",
+      "work_model": "Unknown",
+      "discovery_note": "Surfaced in July 18 Seattle startup scan. Apptio co-founders Sunny Gupta and Kurt Shintaffer launched Thira with $21M seed round led by Madrona, announced July 14, 2026. Builds agentic AI systems to autonomously handle IT support tickets and enterprise back-office work. Founding team includes former SVP Engineering at Atlassian (Mudit Goel), former AI Engineer at Oracle (Grant Neuman), former Director of PM at Databricks, and AIVOT founder. 10 enterprise design partners engaged pre-launch; commercial launch expected fall 2026. No UX or product designer posting confirmed — pre-hire signal. Enterprise B2B UX context (agent builder UI, IT support workflows). Sources: GeekWire (geekwire.com/2026/apptio-co-founders-reunite-to-launch-enterprise-ai-startup-thira-with-21m-in-funding-led-by-madrona/), BusinessWire (businesswire.com/news/home/20260714608171/en/).",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
