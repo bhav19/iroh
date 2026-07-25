@@ -150,9 +150,9 @@
       "discovered_date": "2026-06-21",
       "source": "regional_intelligence — Seattle/Bellevue/Redmond Tech/SaaS scan",
       "industry": "Tech/SaaS",
-      "location": "Seattle, WA",
-      "work_model": "Unknown",
-      "discovery_note": "Surfaced in June 21 regional_intelligence scan (58 employees in Seattle region, ranked #7 of 100 companies). No design posting confirmed and no news found in this run. Adding as early watch — requires a follow-up lookup to determine product focus and UX needs.",
+      "location": "Bellevue, WA",
+      "work_model": "Hybrid",
+      "discovery_note": "Surfaced in June 21 regional_intelligence scan (58 employees at time of discovery). July 25, 2026 update: $50M Series B confirmed, led by Eclipse with Oak HC/FT participating — total funding now $150M. Now 130 employees. Supply chain AI startup founded by Dave Clark (former Amazon operations chief, former Flexport CEO). Autonomous supply chain OS that handles routine inventory, allocation, and logistics decisions and pushes updated plans to existing enterprise systems. Enterprise customers include Fanatics, Meta VR/AR division, and Kimberly-Clark. No UX or product designer posting confirmed as of July 25 — pre-hire signal at Series B stage. Sources: GeekWire (geekwire.com/2026/supply-chain-startup-auger-led-by-ex-amazon-operations-chief-raises-50m-and-lands-big-customers/), MyNorthwest, PYMNTS.",
       "status": "active",
       "dropped_reason": null
     },
@@ -333,6 +333,18 @@
       "location": "Bellevue, WA",
       "work_model": "Unknown",
       "discovery_note": "Surfaced in July 18 Seattle startup scan. Apptio co-founders Sunny Gupta and Kurt Shintaffer launched Thira with $21M seed round led by Madrona, announced July 14, 2026. Builds agentic AI systems to autonomously handle IT support tickets and enterprise back-office work. Founding team includes former SVP Engineering at Atlassian (Mudit Goel), former AI Engineer at Oracle (Grant Neuman), former Director of PM at Databricks, and AIVOT founder. 10 enterprise design partners engaged pre-launch; commercial launch expected fall 2026. No UX or product designer posting confirmed — pre-hire signal. Enterprise B2B UX context (agent builder UI, IT support workflows). Sources: GeekWire (geekwire.com/2026/apptio-co-founders-reunite-to-launch-enterprise-ai-startup-thira-with-21m-in-funding-led-by-madrona/), BusinessWire (businesswire.com/news/home/20260714608171/en/).",
+      "status": "active",
+      "dropped_reason": null
+    },
+    {
+      "name": "Binti",
+      "ldc_id": null,
+      "discovered_date": "2026-07-25",
+      "source": "market_scan_web_search — GeekWire July 2026",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA (Lake Union) + San Francisco, CA (HQ)",
+      "work_model": "Hybrid",
+      "discovery_note": "Surfaced in July 25 Seattle market scan. Child welfare SaaS software — tools for child welfare agencies to manage foster care placements, licensing, and family connections. SF-based company that just opened its first satellite office on Seattle's Lake Union (2900 Westlake Ave N) with 8 employees to start. CEO Felicia Curcuru cited accessing Seattle's talent pool as the reason for expansion. No UX or product designer posting confirmed as of July 25. Pre-hire watch: companies opening satellite offices to access local talent typically hire across functions as the office grows. Mission-driven product (child welfare, family wellbeing) with complex government-sector UX constraints. Sources: GeekWire (geekwire.com/2026/san-francisco-based-binti-opens-office-on-seattles-lake-union-to-tap-into-citys-great-talent-pool/). Check binti.com/careers for future postings.",
       "status": "active",
       "dropped_reason": null
     }
