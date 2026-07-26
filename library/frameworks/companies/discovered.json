@@ -347,6 +347,18 @@
       "discovery_note": "Surfaced in July 25 Seattle market scan. Child welfare SaaS software — tools for child welfare agencies to manage foster care placements, licensing, and family connections. SF-based company that just opened its first satellite office on Seattle's Lake Union (2900 Westlake Ave N) with 8 employees to start. CEO Felicia Curcuru cited accessing Seattle's talent pool as the reason for expansion. No UX or product designer posting confirmed as of July 25. Pre-hire watch: companies opening satellite offices to access local talent typically hire across functions as the office grows. Mission-driven product (child welfare, family wellbeing) with complex government-sector UX constraints. Sources: GeekWire (geekwire.com/2026/san-francisco-based-binti-opens-office-on-seattles-lake-union-to-tap-into-citys-great-talent-pool/). Check binti.com/careers for future postings.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "XBOW",
+      "ldc_id": null,
+      "discovered_date": "2026-07-26",
+      "source": "market_scan_web_search — Seattle startup funding scan (July 2026)",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA",
+      "work_model": "Remote-eligible (Seattle base)",
+      "discovery_note": "Surfaced in July 26 Seattle startup market scan. AI-powered offensive security platform — automates penetration testing and vulnerability discovery for enterprise customers. Founded 2024. Raised $155M on July 13, 2026 (round size confirmed via July 2026 Seattle funding roundup). Active Product Designer role confirmed on Built In (builtin.com/job/product-designer/7423357), $175K–$250K, remote-eligible. Small team (~86 employees at time of discovery), large design ownership scope. Front-end skills (CSS/React/Tailwind) noted as preferred but not blocking for a pure design candidate. B2B cybersecurity context — outside Bhavika's primary industries but strong Seattle location and compensation match. Included in July 26 digest under 'From the market' section.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
