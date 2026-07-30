@@ -371,6 +371,18 @@
       "discovery_note": "Surfaced in July 27 mental health market scan. Venture-backed mental health startup focused on scaling access to behavioral healthcare through employer partnerships. Senior Product Designer role confirmed active on Ashby (jobs.ashbyhq.com/TavaHealth/f428de8a-a625-45c0-bb9b-ee1e2029a0c7). Role focuses on patient-facing experiences: onboarding, scheduling, payments, and telehealth. Requires 5+ years experience with consumer digital product portfolio. Remote. Benefits include access to personal therapist for employee and dependents. Strong thematic match with Bhavika's mental health and remote-work preferences.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Nominal",
+      "ldc_id": null,
+      "discovered_date": "2026-07-30",
+      "source": "market_scan_web_search — GeekWire July 29, 2026",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA (permanent office, forming)",
+      "work_model": "Hybrid",
+      "discovery_note": "Surfaced in July 30 market scan. Industrial AI startup whose software helps engineers build, test, and validate complex hardware systems — customers in defense, energy, robotics, and automotive. Raised $80M in venture funding. Announced permanent Seattle office July 29, 2026 (GeekWire: geekwire.com/2026/seattle-lands-another-1b-startup-heres-the-latest-arrival-in-the-industrial-ai-boom/). Currently 11 Seattle employees in a downtown co-working space, targeting 20–25 by end of 2026 and 40–50 by end of 2027. Seattle will be a full cross-functional location with design explicitly named as one of the functions to be staffed. Head of Product Stephen Slattery (former Anduril Industries) relocating from LA to lead the office. No UX or product designer posting confirmed as of July 30 — pre-hire signal. Note: primary product context is B2B industrial software for hardware engineers, outside Bhavika's primary target industries. Monitor nominal.so/careers for future postings.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
