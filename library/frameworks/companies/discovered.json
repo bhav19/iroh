@@ -383,6 +383,18 @@
       "discovery_note": "Surfaced in July 30 market scan. Industrial AI startup whose software helps engineers build, test, and validate complex hardware systems — customers in defense, energy, robotics, and automotive. Raised $80M in venture funding. Announced permanent Seattle office July 29, 2026 (GeekWire: geekwire.com/2026/seattle-lands-another-1b-startup-heres-the-latest-arrival-in-the-industrial-ai-boom/). Currently 11 Seattle employees in a downtown co-working space, targeting 20–25 by end of 2026 and 40–50 by end of 2027. Seattle will be a full cross-functional location with design explicitly named as one of the functions to be staffed. Head of Product Stephen Slattery (former Anduril Industries) relocating from LA to lead the office. No UX or product designer posting confirmed as of July 30 — pre-hire signal. Note: primary product context is B2B industrial software for hardware engineers, outside Bhavika's primary target industries. Monitor nominal.so/careers for future postings.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Gradial",
+      "ldc_id": null,
+      "discovered_date": "2026-08-02",
+      "source": "market_scan_web_search — Seattle startup funding roundup (GeekWire Q2 2026)",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA",
+      "work_model": "On-site / Hybrid (Seattle)",
+      "discovery_note": "Surfaced in August 2 Seattle startup funding scan. Agentic marketing software platform — enables marketers to implement content changes directly without dev dependency; AI learns brand over time. Raised $65M Series A (confirmed in GeekWire Q2 2026 Seattle funding roundup as one of the quarter's largest raises). Active Product Engineer (UX/UI) role confirmed on Built In (builtin.com/job/product-engineer-ux-ui-ref-gr4723/8998144), Mediabistro, and ZipRecruiter. $120K–$170K, Seattle-based. Role involves defining UX patterns for AI-assisted enterprise marketing workflows. Note: 'Product Engineer' title implies possible code component — verify design-to-engineering balance in JD. B2B marketing tools context; outside Bhavika's primary industries (healthcare/mental health) but strong Seattle location and compensation match.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
