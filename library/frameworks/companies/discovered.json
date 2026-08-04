@@ -395,6 +395,18 @@
       "discovery_note": "Surfaced in August 2 Seattle startup funding scan. Agentic marketing software platform — enables marketers to implement content changes directly without dev dependency; AI learns brand over time. Raised $65M Series A (confirmed in GeekWire Q2 2026 Seattle funding roundup as one of the quarter's largest raises). Active Product Engineer (UX/UI) role confirmed on Built In (builtin.com/job/product-engineer-ux-ui-ref-gr4723/8998144), Mediabistro, and ZipRecruiter. $120K–$170K, Seattle-based. Role involves defining UX patterns for AI-assisted enterprise marketing workflows. Note: 'Product Engineer' title implies possible code component — verify design-to-engineering balance in JD. B2B marketing tools context; outside Bhavika's primary industries (healthcare/mental health) but strong Seattle location and compensation match.",
       "status": "active",
       "dropped_reason": null
+    },
+    {
+      "name": "Evlo AI",
+      "ldc_id": null,
+      "discovered_date": "2026-08-04",
+      "source": "market_scan_web_search — Seattle UX job market scan (LinkedIn, August 4, 2026)",
+      "industry": "Tech/SaaS",
+      "location": "Seattle, WA",
+      "work_model": "Unknown",
+      "discovery_note": "Surfaced in August 4 Seattle UX market scan via LinkedIn job listings. Active UX Designer role confirmed on LinkedIn (linkedin.com/jobs/view/ux-designer-at-evlo-ai-4446401959), with simultaneous postings in Chicago and Dallas suggesting a multi-city IC designer hiring push. Role description focuses on 'complex, data-heavy digital products,' 3–6 years experience required. Company profile limited — minimal public funding or product information available. Research the company directly before actioning. Crunchbase profile exists (crunchbase.com/organization/evlo). B2B AI tech context; outside Bhavika's primary industries but Seattle location match is strong.",
+      "status": "active",
+      "dropped_reason": null
     }
   ],
   "_schema": {
